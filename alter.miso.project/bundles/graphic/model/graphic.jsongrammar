@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jsongrammar:JsonGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:jsongrammar="http://at.jku.bise/jsongrammar/1.0" nsURI="http://jku.bise.at/graphic">
+  <detailedGrammar>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootURI/URI"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsName/name"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/versions"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV1/v1"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV2/v2"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV3/v3"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsVname/vname"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV1/v1"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV2/v2"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV3/v3"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/constraints"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes/planes"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsIlumination/ilumination"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMax/sizeMax"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMin/sizeMin"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeInit/sizeInit"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsOverlapping/overlapping"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsXToOriginPos/xToOriginPos"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsYToOriginPos/yToOriginPos"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsZToOriginPos/zToOriginPos"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsRotation/rotation"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsText/text"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsTrim/trim"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCategoryBitMask/categoryBitMask"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCollisionBitMask/collisionBitMask"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsContactTestBitMask/contactTestBitMask"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsType/type"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsColor/color"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTextColor/textColor"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecorator/decorator"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorColor/decoratorColor"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorWidth/decoratorWidth"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorPos/decoratorPos"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPattern/pattern"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsWidth/width"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPosition/position"/>
+    <keywords xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTarget/target"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClasses/classes"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributes/showAttributes"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributes/materialAttributes"/>
+    <keywords xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsConnections/connections"/>
+    <curlyBracesReferences href="graphicOpt.ecore#//GraphicRoot/graphicRoot"/>
+    <curlyBracesReferences href="graphicOpt.ecore#//GraphicRootClassesItems/items"/>
+    <curlyBracesReferences href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/versions"/>
+    <curlyBracesReferences href="graphicOpt.ecore#//GraphicRootClassesItemsVname/vname"/>
+    <curlyBracesReferences href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/constraints"/>
+    <curlyBracesReferences href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/items"/>
+    <bracketsReferences href="http://at.jku.bise/jsonMM#//ArrayValue/value"/>
+    <bracketsReferences href="graphicOpt.ecore#//GraphicRootClasses/classes"/>
+    <bracketsReferences href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributes/showAttributes"/>
+    <bracketsReferences href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributes/materialAttributes"/>
+    <bracketsReferences href="graphicOpt.ecore#//GraphicRootClassesItemsConnections/connections"/>
+    <keyValue href="http://at.jku.bise/jsonMM#//KeyValuePair/key"/>
+    <curlyBracesEClass href="http://at.jku.bise/jsonMM#//ObjectValue"/>
+    <rootEClass href="graphicOpt.ecore#//GraphicRoot"/>
+  </detailedGrammar>
+</jsongrammar:JsonGrammar>

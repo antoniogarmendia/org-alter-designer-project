@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/graphic/src-gen" modelPluginID="graphic" modelName="GraphicOpt" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="11.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>graphicOpt.ecore</foreignModel>
+  <genPackages prefix="Graphic" disposableProviderFactory="true">
+    <ecorePackage href="graphicOpt.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRoot"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRoot/graphicRoot"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRoot/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRoot/URI"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRoot/classes"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="graphicOpt.ecore#//GraphicRoot/get"/>
+        <genParameters>
+          <ecoreParameter href="graphicOpt.ecore#//GraphicRoot/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootURI"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootURI/URI"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClasses"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClasses/classes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/versions"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/vname"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/showAttributes"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/materialAttributes"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/constraints"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItems/connections"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="graphicOpt.ecore#//GraphicRootClassesItems/get"/>
+        <genParameters>
+          <ecoreParameter href="graphicOpt.ecore#//GraphicRootClassesItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVersions"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/versions"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/v1"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/v2"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/v3"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/get"/>
+        <genParameters>
+          <ecoreParameter href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV1"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV1/v1"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV2"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV2/v2"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV3"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV3/v3"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVname"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsVname/vname"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVname/v1"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVname/v2"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVname/v3"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="graphicOpt.ecore#//GraphicRootClassesItemsVname/get"/>
+        <genParameters>
+          <ecoreParameter href="graphicOpt.ecore#//GraphicRootClassesItemsVname/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV1"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV1/v1"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV2"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV2/v2"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV3"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV3/v3"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributes"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributes/showAttributes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributesItems"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributesItems/items"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributes"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributes/materialAttributes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributesItems"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributesItems/items"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/constraints"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/planes"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/ilumination"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/sizeMax"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/sizeMin"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/sizeInit"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/overlapping"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/xToOriginPos"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/yToOriginPos"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/zToOriginPos"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/rotation"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/text"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/trim"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/categoryBitMask"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/collisionBitMask"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/contactTestBitMask"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/get"/>
+        <genParameters>
+          <ecoreParameter href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes/planes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsIlumination"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsIlumination/ilumination"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMax"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMax/sizeMax"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMin"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMin/sizeMin"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeInit"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeInit/sizeInit"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsOverlapping"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsOverlapping/overlapping"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsXToOriginPos"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsXToOriginPos/xToOriginPos"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsYToOriginPos"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsYToOriginPos/yToOriginPos"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsZToOriginPos"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsZToOriginPos/zToOriginPos"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsRotation"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsRotation/rotation"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsText"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsText/text"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsTrim"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsTrim/trim"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCategoryBitMask"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCategoryBitMask/categoryBitMask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCollisionBitMask"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCollisionBitMask/collisionBitMask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsContactTestBitMask"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsContactTestBitMask/contactTestBitMask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnections"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsConnections/connections"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/type"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/color"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/textColor"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/decorator"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/decoratorColor"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/decoratorWidth"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/decoratorPos"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/pattern"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/width"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/position"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/target"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/get"/>
+        <genParameters>
+          <ecoreParameter href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsType"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsType/type"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsColor"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsColor/color"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTextColor"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTextColor/textColor"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecorator"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecorator/decorator"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorColor"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorColor/decoratorColor"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorWidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorWidth/decoratorWidth"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorPos"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorPos/decoratorPos"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPattern"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPattern/pattern"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsWidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsWidth/width"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPosition"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPosition/position"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTarget"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTarget/target"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsVnamePropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

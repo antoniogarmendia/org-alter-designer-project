@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: ontological;singleton:=true
+Automatic-Module-Name: ontological
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Export-Package: ontological,ontological.impl,ontological.util
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibilit
+ y:=reexport,jsonMM;visibility:=reexport,jku.se.atl.transformation.utils
+ ,jku.se.atl.transformation.utils
+Bundle-ActivationPolicy: lazy
+

@@ -1,0 +1,93 @@
+{
+	"type":"object",
+	"additionalProperties": false,
+	"properties":{
+		"APIDescriptions":{
+			"type":"array",
+			"items":{
+				"type":"object",
+				"additionalProperties": false,
+				"properties":{
+					"name": {
+						"type":"string"
+					},
+					"protocol": {
+						"type":"string"
+					},
+					"url": {
+						"type":"string",
+						"format":"uri"
+					},
+					"paths": {
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"route":{
+									"type":"string"
+								},
+								"parameters":{
+									"type":"array",
+									"items":{
+										"type":"object",
+										"additionalProperties": false,
+										"properties":{
+											"name": {
+												"type":"string"
+											},
+											"type": {
+												"type":"string"
+											}
+										},
+										"required":["name", "type"]
+									}
+								},
+								"outputs":{
+									"type":"array",
+									"items":{
+										"type":"object",
+										"additionalProperties": false,
+										"properties":{
+											"name": {
+												"type":"string"
+											},
+											"type": {
+												"type":"string"
+											},
+											"JSONPath": {
+												"type":"string"
+											}
+										},
+										"required":["name", "type", "JSONPath"]
+									}
+								}
+							},
+							"required":["route", "parameters", "outputs"]
+						}
+					},
+					"APIAuth":{
+						"$comment":"can be empty",
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"name":{
+									"type":"string"
+								},
+								"key":{
+									"type":"string"
+								}
+							},
+							"required":["name", "key"]
+						}
+					}
+				},
+				"required":["name", "protocol", "url", "paths", "APIAuth"]
+			}		
+		}
+	
+	},
+	"required":["APIDescriptions"]
+}

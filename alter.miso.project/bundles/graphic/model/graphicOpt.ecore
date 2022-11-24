@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="graphic" nsURI="http://jku.bise.at/graphic" nsPrefix="graphic">
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRoot">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;URI&quot;.equals(key) ){return this.getURI();}&#xA;&#xA;if (&quot;classes&quot;.equals(key) ){return this.getClasses();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (GraphicRootPropertiesAbstract child : this.graphicRoot){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graphicRoot" upperBound="-1"
+        eType="#//GraphicRootPropertiesAbstract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getGraphicRoot().stream().filter(graphic.GraphicRootName.class::isInstance).findAny().map(graphic.GraphicRootName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="URI" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getGraphicRoot().stream().filter(graphic.GraphicRootURI.class::isInstance).findAny().map(graphic.GraphicRootURI.class::cast).map(instance->instance.getURI()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classes" ordered="false"
+        unique="false" upperBound="-1" eType="#//GraphicRootClassesItems" changeable="false"
+        volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getGraphicRoot().stream().filter(graphic.GraphicRootClasses.class::isInstance).findAny().map(graphic.GraphicRootClasses.class::cast).map(instance->instance.getClasses()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootName" eSuperTypes="#//GraphicRootPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootURI" eSuperTypes="#//GraphicRootPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="URI" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="URI"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClasses" eSuperTypes="#//GraphicRootPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classes" upperBound="-1"
+        eType="#//GraphicRootClassesItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="classes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;versions&quot;.equals(key) ){return this.getVersions();}&#xA;&#xA;if (&quot;vname&quot;.equals(key) ){return this.getVname();}&#xA;&#xA;if (&quot;showAttributes&quot;.equals(key) ){return this.getShowAttributes();}&#xA;&#xA;if (&quot;materialAttributes&quot;.equals(key) ){return this.getMaterialAttributes();}&#xA;&#xA;if (&quot;constraints&quot;.equals(key) ){return this.getConstraints();}&#xA;&#xA;if (&quot;connections&quot;.equals(key) ){return this.getConnections();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (GraphicRootClassesItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//GraphicRootClassesItemsPropertiesAbstract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsName.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versions" ordered="false"
+        unique="false" eType="#//GraphicRootClassesItemsVersions" changeable="false"
+        volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsVersions.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVersions.class::cast).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vname" ordered="false"
+        unique="false" eType="#//GraphicRootClassesItemsVname" changeable="false"
+        volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsVname.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVname.class::cast).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="showAttributes" ordered="false"
+        unique="false" upperBound="-1" eType="#//GraphicRootClassesItemsShowAttributesItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsShowAttributes.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsShowAttributes.class::cast).map(instance->instance.getShowAttributes()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="materialAttributes" ordered="false"
+        unique="false" upperBound="-1" eType="#//GraphicRootClassesItemsMaterialAttributesItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsMaterialAttributes.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsMaterialAttributes.class::cast).map(instance->instance.getMaterialAttributes()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" ordered="false"
+        unique="false" eType="#//GraphicRootClassesItemsConstraints" changeable="false"
+        volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConstraints.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraints.class::cast).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" ordered="false"
+        unique="false" upperBound="-1" eType="#//GraphicRootClassesItemsConnectionsItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnections.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnections.class::cast).map(instance->instance.getConnections()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsName" eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVersions" eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;v1&quot;.equals(key) ){return this.getV1();}&#xA;&#xA;if (&quot;v2&quot;.equals(key) ){return this.getV2();}&#xA;&#xA;if (&quot;v3&quot;.equals(key) ){return this.getV3();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (GraphicRootClassesItemsVersionsPropertiesAbstract child : this.versions){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versions" upperBound="-1"
+        eType="#//GraphicRootClassesItemsVersionsPropertiesAbstract" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="versions"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v1" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getVersions().stream().filter(graphic.GraphicRootClassesItemsVersionsV1.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVersionsV1.class::cast).map(instance->instance.getV1()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v2" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getVersions().stream().filter(graphic.GraphicRootClassesItemsVersionsV2.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVersionsV2.class::cast).map(instance->instance.getV2()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v3" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getVersions().stream().filter(graphic.GraphicRootClassesItemsVersionsV3.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVersionsV3.class::cast).map(instance->instance.getV3()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVersionsV1" eSuperTypes="#//GraphicRootClassesItemsVersionsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v1" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="v1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVersionsV2" eSuperTypes="#//GraphicRootClassesItemsVersionsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v2" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="v2"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVersionsV3" eSuperTypes="#//GraphicRootClassesItemsVersionsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v3" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="v3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVname" eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;v1&quot;.equals(key) ){return this.getV1();}&#xA;&#xA;if (&quot;v2&quot;.equals(key) ){return this.getV2();}&#xA;&#xA;if (&quot;v3&quot;.equals(key) ){return this.getV3();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (GraphicRootClassesItemsVnamePropertiesAbstract child : this.vname){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vname" upperBound="-1"
+        eType="#//GraphicRootClassesItemsVnamePropertiesAbstract" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="vname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v1" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getVname().stream().filter(graphic.GraphicRootClassesItemsVnameV1.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVnameV1.class::cast).map(instance->instance.getV1()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v2" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getVname().stream().filter(graphic.GraphicRootClassesItemsVnameV2.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVnameV2.class::cast).map(instance->instance.getV2()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v3" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getVname().stream().filter(graphic.GraphicRootClassesItemsVnameV3.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsVnameV3.class::cast).map(instance->instance.getV3()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVnameV1" eSuperTypes="#//GraphicRootClassesItemsVnamePropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v1" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="v1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVnameV2" eSuperTypes="#//GraphicRootClassesItemsVnamePropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v2" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="v2"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVnameV3" eSuperTypes="#//GraphicRootClassesItemsVnamePropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="v3" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="v3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsShowAttributes"
+      eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="showAttributes" upperBound="-1"
+        eType="#//GraphicRootClassesItemsShowAttributesItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="showAttributes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsShowAttributesItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="items" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsMaterialAttributes"
+      eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="materialAttributes" upperBound="-1"
+        eType="#//GraphicRootClassesItemsMaterialAttributesItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="materialAttributes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsMaterialAttributesItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="items" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraints"
+      eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;planes&quot;.equals(key) ){return this.getPlanes();}&#xA;&#xA;if (&quot;ilumination&quot;.equals(key) ){return this.getIlumination();}&#xA;&#xA;if (&quot;sizeMax&quot;.equals(key) ){return this.getSizeMax();}&#xA;&#xA;if (&quot;sizeMin&quot;.equals(key) ){return this.getSizeMin();}&#xA;&#xA;if (&quot;sizeInit&quot;.equals(key) ){return this.getSizeInit();}&#xA;&#xA;if (&quot;overlapping&quot;.equals(key) ){return this.getOverlapping();}&#xA;&#xA;if (&quot;xToOriginPos&quot;.equals(key) ){return this.getXToOriginPos();}&#xA;&#xA;if (&quot;yToOriginPos&quot;.equals(key) ){return this.getYToOriginPos();}&#xA;&#xA;if (&quot;zToOriginPos&quot;.equals(key) ){return this.getZToOriginPos();}&#xA;&#xA;if (&quot;rotation&quot;.equals(key) ){return this.getRotation();}&#xA;&#xA;if (&quot;text&quot;.equals(key) ){return this.getText();}&#xA;&#xA;if (&quot;trim&quot;.equals(key) ){return this.getTrim();}&#xA;&#xA;if (&quot;categoryBitMask&quot;.equals(key) ){return this.getCategoryBitMask();}&#xA;&#xA;if (&quot;collisionBitMask&quot;.equals(key) ){return this.getCollisionBitMask();}&#xA;&#xA;if (&quot;contactTestBitMask&quot;.equals(key) ){return this.getContactTestBitMask();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (GraphicRootClassesItemsConstraintsPropertiesAbstract child : this.constraints){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" upperBound="-1"
+        eType="#//GraphicRootClassesItemsConstraintsPropertiesAbstract" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="constraints"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="planes" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsPlanes.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsPlanes.class::cast).map(instance->instance.getPlanes()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ilumination" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsIlumination.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsIlumination.class::cast).map(instance->instance.getIlumination()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeMax" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsSizeMax.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsSizeMax.class::cast).map(instance->instance.getSizeMax()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeMin" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsSizeMin.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsSizeMin.class::cast).map(instance->instance.getSizeMin()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeInit" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsSizeInit.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsSizeInit.class::cast).map(instance->instance.getSizeInit()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="overlapping" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsOverlapping.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsOverlapping.class::cast).map(instance->instance.getOverlapping()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xToOriginPos" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsXToOriginPos.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsXToOriginPos.class::cast).map(instance->instance.getXToOriginPos()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="yToOriginPos" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsYToOriginPos.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsYToOriginPos.class::cast).map(instance->instance.getYToOriginPos()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="zToOriginPos" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsZToOriginPos.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsZToOriginPos.class::cast).map(instance->instance.getZToOriginPos()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rotation" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsRotation.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsRotation.class::cast).map(instance->instance.getRotation()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsText.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsText.class::cast).map(instance->instance.getText()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trim" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsTrim.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsTrim.class::cast).map(instance->instance.getTrim()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="categoryBitMask" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsCategoryBitMask.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsCategoryBitMask.class::cast).map(instance->instance.getCategoryBitMask()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="collisionBitMask" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsCollisionBitMask.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsCollisionBitMask.class::cast).map(instance->instance.getCollisionBitMask()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contactTestBitMask" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getConstraints().stream().filter(graphic.GraphicRootClassesItemsConstraintsContactTestBitMask.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConstraintsContactTestBitMask.class::cast).map(instance->instance.getContactTestBitMask()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsPlanes"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eAnnotations source="Comment">
+      <details key="Comment" value="only values horizontal, verical or any"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="planes" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="planes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsIlumination"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ilumination" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="ilumination"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsSizeMax"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeMax" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="sizeMax"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsSizeMin"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeMin" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="sizeMin"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsSizeInit"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sizeInit" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="sizeInit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsOverlapping"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="overlapping" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="overlapping"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsXToOriginPos"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xToOriginPos" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="xToOriginPos"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsYToOriginPos"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="yToOriginPos" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="yToOriginPos"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsZToOriginPos"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="zToOriginPos" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="zToOriginPos"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsRotation"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rotation" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="rotation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsText"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="text"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsTrim"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="boolean"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trim" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="trim"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsCategoryBitMask"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="integer"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="categoryBitMask" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="categoryBitMask"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsCollisionBitMask"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="integer"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="collisionBitMask" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="collisionBitMask"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsContactTestBitMask"
+      eSuperTypes="#//GraphicRootClassesItemsConstraintsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="integer"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contactTestBitMask" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="contactTestBitMask"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnections"
+      eSuperTypes="#//GraphicRootClassesItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        eType="#//GraphicRootClassesItemsConnectionsItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="connections"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;type&quot;.equals(key) ){return this.getType();}&#xA;&#xA;if (&quot;color&quot;.equals(key) ){return this.getColor();}&#xA;&#xA;if (&quot;textColor&quot;.equals(key) ){return this.getTextColor();}&#xA;&#xA;if (&quot;decorator&quot;.equals(key) ){return this.getDecorator();}&#xA;&#xA;if (&quot;decoratorColor&quot;.equals(key) ){return this.getDecoratorColor();}&#xA;&#xA;if (&quot;decoratorWidth&quot;.equals(key) ){return this.getDecoratorWidth();}&#xA;&#xA;if (&quot;decoratorPos&quot;.equals(key) ){return this.getDecoratorPos();}&#xA;&#xA;if (&quot;pattern&quot;.equals(key) ){return this.getPattern();}&#xA;&#xA;if (&quot;width&quot;.equals(key) ){return this.getWidth();}&#xA;&#xA;if (&quot;position&quot;.equals(key) ){return this.getPosition();}&#xA;&#xA;if (&quot;target&quot;.equals(key) ){return this.getTarget();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (GraphicRootClassesItemsConnectionsItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsName.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsType.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsType.class::cast).map(instance->instance.getType()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsColor.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsColor.class::cast).map(instance->instance.getColor()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textColor" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsTextColor.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsTextColor.class::cast).map(instance->instance.getTextColor()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decorator" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsDecorator.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsDecorator.class::cast).map(instance->instance.getDecorator()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decoratorColor" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsDecoratorColor.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsDecoratorColor.class::cast).map(instance->instance.getDecoratorColor()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decoratorWidth" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsDecoratorWidth.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsDecoratorWidth.class::cast).map(instance->instance.getDecoratorWidth()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decoratorPos" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsDecoratorPos.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsDecoratorPos.class::cast).map(instance->instance.getDecoratorPos()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pattern" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsPattern.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsPattern.class::cast).map(instance->instance.getPattern()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsWidth.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsWidth.class::cast).map(instance->instance.getWidth()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsPosition.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsPosition.class::cast).map(instance->instance.getPosition()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="target" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(graphic.GraphicRootClassesItemsConnectionsItemsTarget.class::isInstance).findAny().map(graphic.GraphicRootClassesItemsConnectionsItemsTarget.class::cast).map(instance->instance.getTarget()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsName"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsType"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="type"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsColor"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="color"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsTextColor"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textColor" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="textColor"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsDecorator"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decorator" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="decorator"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsDecoratorColor"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decoratorColor" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="decoratorColor"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsDecoratorWidth"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decoratorWidth" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="decoratorWidth"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsDecoratorPos"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decoratorPos" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="decoratorPos"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsPattern"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pattern" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="pattern"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsWidth"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="width"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsPosition"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="position"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsTarget"
+      eSuperTypes="#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="target" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="target"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootPropertiesAbstract" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVersionsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsVnamePropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConstraintsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicRootClassesItemsConnectionsItemsPropertiesAbstract"
+      abstract="true"/>
+</ecore:EPackage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jsongrammar:JsonGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:jsongrammar="http://at.jku.bise/jsongrammar/1.0" nsURI="http://jku.bise.at/ontological">
+  <detailedGrammar>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootURI/URI"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootOnlyCodes/onlyCodes"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootBluetooth/bluetooth"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootExternal/external"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootFirebase/firebase"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootPhysics/physics"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootGameloop/gameloop"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAbstract/abstract"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsType/type"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMin/min"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMax/max"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsDefault/default"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsReadOnly/readOnly"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsParam/isParam"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsKey/isKey"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsContaintment/containtment"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMin/min"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMax/max"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsTarget/target"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsOpposite/opposite"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAutoID/autoID"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes/onlyCodes"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth/bluetooth"/>
+    <keywords xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN/noSCN"/>
+    <keywords xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClasses/classes"/>
+    <keywords xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributes/attributes"/>
+    <keywords xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferences/references"/>
+    <curlyBracesReferences href="ontologicalOpt.ecore#//OntologicalRoot/ontologicalRoot"/>
+    <curlyBracesReferences href="ontologicalOpt.ecore#//OntologicalRootClassesItems/items"/>
+    <curlyBracesReferences href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/items"/>
+    <curlyBracesReferences href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/items"/>
+    <bracketsReferences href="http://at.jku.bise/jsonMM#//ArrayValue/value"/>
+    <bracketsReferences href="ontologicalOpt.ecore#//OntologicalRootClasses/classes"/>
+    <bracketsReferences href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributes/attributes"/>
+    <bracketsReferences href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferences/references"/>
+    <keyValue href="http://at.jku.bise/jsonMM#//KeyValuePair/key"/>
+    <curlyBracesEClass href="http://at.jku.bise/jsonMM#//ObjectValue"/>
+    <rootEClass href="ontologicalOpt.ecore#//OntologicalRoot"/>
+  </detailedGrammar>
+</jsongrammar:JsonGrammar>

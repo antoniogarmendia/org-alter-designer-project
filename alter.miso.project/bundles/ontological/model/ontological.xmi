@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trace:TraceLinkSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http://www.eclipse.org/m2m/atl/emftvm/2011/Trace" defaultSourceElements="//@rules.0/@links.0/@sourceElements.0 //@rules.1/@links.0/@sourceElements.0 //@rules.1/@links.1/@sourceElements.0 //@rules.1/@links.2/@sourceElements.0 //@rules.1/@links.3/@sourceElements.0 //@rules.1/@links.4/@sourceElements.0 //@rules.1/@links.5/@sourceElements.0 //@rules.1/@links.6/@sourceElements.0 //@rules.1/@links.7/@sourceElements.0 //@rules.1/@links.8/@sourceElements.0 //@rules.1/@links.9/@sourceElements.0 //@rules.1/@links.10/@sourceElements.0 //@rules.1/@links.11/@sourceElements.0 //@rules.1/@links.12/@sourceElements.0 //@rules.1/@links.13/@sourceElements.0 //@rules.1/@links.14/@sourceElements.0 //@rules.1/@links.15/@sourceElements.0 //@rules.1/@links.16/@sourceElements.0 //@rules.1/@links.17/@sourceElements.0 //@rules.1/@links.18/@sourceElements.0 //@rules.1/@links.19/@sourceElements.0 //@rules.1/@links.20/@sourceElements.0 //@rules.1/@links.21/@sourceElements.0 //@rules.1/@links.22/@sourceElements.0 //@rules.1/@links.23/@sourceElements.0 //@rules.1/@links.24/@sourceElements.0 //@rules.1/@links.25/@sourceElements.0 //@rules.1/@links.26/@sourceElements.0 //@rules.1/@links.27/@sourceElements.0 //@rules.1/@links.28/@sourceElements.0 //@rules.1/@links.29/@sourceElements.0 //@rules.1/@links.30/@sourceElements.0 //@rules.1/@links.31/@sourceElements.0 //@rules.1/@links.32/@sourceElements.0 //@rules.1/@links.33/@sourceElements.0 //@rules.1/@links.34/@sourceElements.0 //@rules.2/@links.0/@sourceElements.0 //@rules.2/@links.1/@sourceElements.0 //@rules.2/@links.2/@sourceElements.0">
+  <rules rule="JsonSchemaToEPackage">
+    <links>
+      <sourceElements name="jsonSchema" defaultFor="/">
+        <object href="../ontological.jschema#/"/>
+      </sourceElements>
+      <targetElements name="ePackage">
+        <object href="ontologicalOpt.ecore#/"/>
+      </targetElements>
+      <targetElements name="jsonGrammar">
+        <object href="ontological.jsongrammar#/"/>
+      </targetElements>
+      <targetElements name="detailedGrammar">
+        <object href="ontological.jsongrammar#//@detailedGrammar"/>
+      </targetElements>
+      <targetElements name="relatedSchemas">
+        <object href="ontological.relatedSchemas#/"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapObjectSchemaToEClass">
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRoot"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootURI"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootOnlyCodes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootBluetooth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootExternal"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootFirebase"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.6/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootPhysics"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.7/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootGameloop"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClasses"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsType"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMin"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMax"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsDefault"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsReadOnly"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsParam"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.7/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsKey"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferences"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsContaintment"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMin"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMax"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsTarget"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsOpposite"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAutoID"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.7/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapItemsAnyOf1ToContainment">
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClasses/classes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributes/attributes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferences/references"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="createPropertiesContainment">
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRoot/ontologicalRoot"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItems/items"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/items"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/items"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="createAbstractEClass" uniqueSourceElements="//@rules.4/@links.0/@sourceElements.0 //@rules.4/@links.1/@sourceElements.0 //@rules.4/@links.2/@sourceElements.0 //@rules.4/@links.3/@sourceElements.0">
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapScalarTypeToEAttribute">
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootURI/URI"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootOnlyCodes/onlyCodes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootBluetooth/bluetooth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootExternal/external"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootFirebase/firebase"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootPhysics/physics"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootGameloop/gameloop"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAbstract/abstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsType/type"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMin/min"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMax/max"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsDefault/default"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsReadOnly/readOnly"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsParam/isParam"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsKey/isKey"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsContaintment/containtment"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMin/min"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMax/max"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsTarget/target"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsOpposite/opposite"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAutoID/autoID"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes/onlyCodes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth/bluetooth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN/noSCN"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapComment">
+    <links>
+      <sourceElements name="commentSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.1"/>
+      </sourceElements>
+      <targetElements name="eAnnotation">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes/%Comment%"/>
+      </targetElements>
+      <targetElements name="entrySet">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes/%Comment%/@details.0"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="commentSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1"/>
+      </sourceElements>
+      <targetElements name="eAnnotation">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth/%Comment%"/>
+      </targetElements>
+      <targetElements name="entrySet">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth/%Comment%/@details.0"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="commentSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.7/@value/@keywordDefinition.1"/>
+      </sourceElements>
+      <targetElements name="eAnnotation">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN/%Comment%"/>
+      </targetElements>
+      <targetElements name="entrySet">
+        <object href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN/%Comment%/@details.0"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="requiredInPropertiesToOcl">
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.8/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../ontological.jschema#//@schema/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+  </rules>
+</trace:TraceLinkSet>

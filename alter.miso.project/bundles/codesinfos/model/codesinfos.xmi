@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trace:TraceLinkSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http://www.eclipse.org/m2m/atl/emftvm/2011/Trace" defaultSourceElements="//@rules.0/@links.0/@sourceElements.0 //@rules.1/@links.0/@sourceElements.0 //@rules.1/@links.1/@sourceElements.0 //@rules.1/@links.2/@sourceElements.0 //@rules.1/@links.3/@sourceElements.0 //@rules.1/@links.4/@sourceElements.0 //@rules.1/@links.5/@sourceElements.0 //@rules.1/@links.6/@sourceElements.0 //@rules.2/@links.0/@sourceElements.0">
+  <rules rule="JsonSchemaToEPackage">
+    <links>
+      <sourceElements name="jsonSchema" defaultFor="/">
+        <object href="../codesinfos.jschema#/"/>
+      </sourceElements>
+      <targetElements name="ePackage">
+        <object href="codesinfosOpt.ecore#/"/>
+      </targetElements>
+      <targetElements name="jsonGrammar">
+        <object href="codesinfos.jsongrammar#/"/>
+      </targetElements>
+      <targetElements name="detailedGrammar">
+        <object href="codesinfos.jsongrammar#//@detailedGrammar"/>
+      </targetElements>
+      <targetElements name="relatedSchemas">
+        <object href="codesinfos.relatedSchemas#/"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapObjectSchemaToEClass">
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRoot"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsClassname"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsNodename"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapItemsAnyOf1ToContainment">
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodes/codes"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="createPropertiesContainment">
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="codesinfosOpt.ecore#//CodesinfosRoot/codesinfosRoot"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItems/items"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="createAbstractEClass" uniqueSourceElements="//@rules.4/@links.0/@sourceElements.0 //@rules.4/@links.1/@sourceElements.0">
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapScalarTypeToEAttribute">
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsClassname/classname"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsNodename/nodename"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapComment">
+    <links>
+      <sourceElements name="commentSchemaDefinition">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1"/>
+      </sourceElements>
+      <targetElements name="eAnnotation">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsClassname/%Comment%"/>
+      </targetElements>
+      <targetElements name="entrySet">
+        <object href="codesinfosOpt.ecore#//CodesinfosRootCodesItemsClassname/%Comment%/@details.0"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="requiredInPropertiesToOcl">
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../codesinfos.jschema#//@schema/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+  </rules>
+</trace:TraceLinkSet>

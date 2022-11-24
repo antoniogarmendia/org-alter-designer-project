@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ontologicalOpt -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ontological.presentation.OntologicalModelWizardID"
+            name="%_UI_OntologicalModelWizard_label"
+            class="ontological.presentation.OntologicalModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/OntologicalModelFile.gif">
+         <description>%_UI_OntologicalModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ontologicalOpt -->
+      <editor
+            id="ontological.presentation.OntologicalEditorID"
+            name="%_UI_OntologicalEditor_label"
+            icon="icons/full/obj16/OntologicalModelFile.gif"
+            extensions="ontological"
+            class="ontological.presentation.OntologicalEditor"
+            contributorClass="ontological.presentation.OntologicalActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

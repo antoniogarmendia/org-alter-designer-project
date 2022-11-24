@@ -1,0 +1,159 @@
+-- OCL contraints for /C:/Users/ruben/22.runtime-json-schema/ontological/ontological
+import 'http://jku.bise.at/ontological'
+
+package ontological
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequiredname ('OntologicalRootClassesItemsAttributesItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequiredtype ('OntologicalRootClassesItemsAttributesItems requires the property type'):
+	if  not self.get('type').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequiredmax ('OntologicalRootClassesItemsAttributesItems requires the property max'):
+	if  not self.get('max').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequiredmin ('OntologicalRootClassesItemsAttributesItems requires the property min'):
+	if  not self.get('min').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequireddefault ('OntologicalRootClassesItemsAttributesItems requires the property default'):
+	if  not self.get('default').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequiredreadOnly ('OntologicalRootClassesItemsAttributesItems requires the property readOnly'):
+	if  not self.get('readOnly').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsAttributesItems 
+
+	inv OntologicalRootClassesItemsAttributesItemsRequiredisParam ('OntologicalRootClassesItemsAttributesItems requires the property isParam'):
+	if  not self.get('isParam').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsReferencesItems 
+
+	inv OntologicalRootClassesItemsReferencesItemsRequiredname ('OntologicalRootClassesItemsReferencesItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsReferencesItems 
+
+	inv OntologicalRootClassesItemsReferencesItemsRequiredmin ('OntologicalRootClassesItemsReferencesItems requires the property min'):
+	if  not self.get('min').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsReferencesItems 
+
+	inv OntologicalRootClassesItemsReferencesItemsRequiredmax ('OntologicalRootClassesItemsReferencesItems requires the property max'):
+	if  not self.get('max').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItemsReferencesItems 
+
+	inv OntologicalRootClassesItemsReferencesItemsRequiredtarget ('OntologicalRootClassesItemsReferencesItems requires the property target'):
+	if  not self.get('target').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItems 
+
+	inv OntologicalRootClassesItemsRequiredname ('OntologicalRootClassesItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItems 
+
+	inv OntologicalRootClassesItemsRequiredattributes ('OntologicalRootClassesItems requires the property attributes'):
+	if  not self.get('attributes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRootClassesItems 
+
+	inv OntologicalRootClassesItemsRequiredreferences ('OntologicalRootClassesItems requires the property references'):
+	if  not self.get('references').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRoot 
+
+	inv OntologicalRootRequiredname ('OntologicalRoot requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRoot 
+
+	inv OntologicalRootRequiredonlyCodes ('OntologicalRoot requires the property onlyCodes'):
+	if  not self.get('onlyCodes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRoot 
+
+	inv OntologicalRootRequiredbluetooth ('OntologicalRoot requires the property bluetooth'):
+	if  not self.get('bluetooth').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRoot 
+
+	inv OntologicalRootRequiredexternal ('OntologicalRoot requires the property external'):
+	if  not self.get('external').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context ontological::OntologicalRoot 
+
+	inv OntologicalRootRequiredclasses ('OntologicalRoot requires the property classes'):
+	if  not self.get('classes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+endpackage
+

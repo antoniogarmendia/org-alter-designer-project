@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ontological/src-gen" modelPluginID="ontological" modelName="OntologicalOpt" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="11.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>ontologicalOpt.ecore</foreignModel>
+  <genPackages prefix="Ontological" disposableProviderFactory="true">
+    <ecorePackage href="ontologicalOpt.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRoot"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRoot/ontologicalRoot"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/URI"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/onlyCodes"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/bluetooth"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/external"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/firebase"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/physics"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRoot/gameloop"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRoot/classes"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="ontologicalOpt.ecore#//OntologicalRoot/get"/>
+        <genParameters>
+          <ecoreParameter href="ontologicalOpt.ecore#//OntologicalRoot/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootURI"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootURI/URI"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootOnlyCodes"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootOnlyCodes/onlyCodes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootBluetooth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootBluetooth/bluetooth"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootExternal"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootExternal/external"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootFirebase"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootFirebase/firebase"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootPhysics"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootPhysics/physics"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootGameloop"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootGameloop/gameloop"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClasses"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClasses/classes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/abstract"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/attributes"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/references"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/autoID"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/onlyCodes"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/bluetooth"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItems/noSCN"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="ontologicalOpt.ecore#//OntologicalRootClassesItems/get"/>
+        <genParameters>
+          <ecoreParameter href="ontologicalOpt.ecore#//OntologicalRootClassesItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAbstract"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAbstract/abstract"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributes"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributes/attributes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/type"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/min"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/max"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/default"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/readOnly"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/isParam"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/isKey"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/get"/>
+        <genParameters>
+          <ecoreParameter href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsType"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsType/type"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMin"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMin/min"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMax"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsMax/max"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsDefault"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsDefault/default"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsReadOnly"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsReadOnly/readOnly"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsParam"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsParam/isParam"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsKey"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsIsKey/isKey"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferences"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferences/references"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/containtment"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/min"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/max"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/target"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/opposite"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/get"/>
+        <genParameters>
+          <ecoreParameter href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsContaintment"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsContaintment/containtment"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMin"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMin/min"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMax"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsMax/max"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsTarget"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsTarget/target"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsOpposite"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsOpposite/opposite"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAutoID"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAutoID/autoID"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsOnlyCodes/onlyCodes"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsBluetooth/bluetooth"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ontologicalOpt.ecore#//OntologicalRootClassesItemsNoSCN/noSCN"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsAttributesItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="ontologicalOpt.ecore#//OntologicalRootClassesItemsReferencesItemsPropertiesAbstract"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

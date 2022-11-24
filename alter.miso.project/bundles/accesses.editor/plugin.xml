@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated accessesOpt -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="accesses.presentation.AccessesModelWizardID"
+            name="%_UI_AccessesModelWizard_label"
+            class="accesses.presentation.AccessesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AccessesModelFile.gif">
+         <description>%_UI_AccessesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated accessesOpt -->
+      <editor
+            id="accesses.presentation.AccessesEditorID"
+            name="%_UI_AccessesEditor_label"
+            icon="icons/full/obj16/AccessesModelFile.gif"
+            extensions="accesses"
+            class="accesses.presentation.AccessesEditor"
+            contributorClass="accesses.presentation.AccessesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

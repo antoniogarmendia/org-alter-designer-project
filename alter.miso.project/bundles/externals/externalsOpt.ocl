@@ -1,0 +1,135 @@
+-- OCL contraints for /C:/Users/ruben/22.runtime-json-schema/externals/externals
+import 'http://jku.bise.at/externals'
+
+package externals
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsRequiredname ('ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsRequiredtype ('ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems requires the property type'):
+	if  not self.get('type').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsRequiredname ('ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsRequiredtype ('ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems requires the property type'):
+	if  not self.get('type').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsRequiredJSONPath ('ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems requires the property JSONPath'):
+	if  not self.get('JSONPath').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsRequiredroute ('ExternalsRootAPIDescriptionsItemsPathsItems requires the property route'):
+	if  not self.get('route').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsRequiredparameters ('ExternalsRootAPIDescriptionsItemsPathsItems requires the property parameters'):
+	if  not self.get('parameters').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsPathsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsPathsItemsRequiredoutputs ('ExternalsRootAPIDescriptionsItemsPathsItems requires the property outputs'):
+	if  not self.get('outputs').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsAPIAuthItems 
+
+	inv ExternalsRootAPIDescriptionsItemsAPIAuthItemsRequiredname ('ExternalsRootAPIDescriptionsItemsAPIAuthItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItemsAPIAuthItems 
+
+	inv ExternalsRootAPIDescriptionsItemsAPIAuthItemsRequiredkey ('ExternalsRootAPIDescriptionsItemsAPIAuthItems requires the property key'):
+	if  not self.get('key').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsRequiredname ('ExternalsRootAPIDescriptionsItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsRequiredprotocol ('ExternalsRootAPIDescriptionsItems requires the property protocol'):
+	if  not self.get('protocol').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsRequiredurl ('ExternalsRootAPIDescriptionsItems requires the property url'):
+	if  not self.get('url').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsRequiredpaths ('ExternalsRootAPIDescriptionsItems requires the property paths'):
+	if  not self.get('paths').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRootAPIDescriptionsItems 
+
+	inv ExternalsRootAPIDescriptionsItemsRequiredAPIAuth ('ExternalsRootAPIDescriptionsItems requires the property APIAuth'):
+	if  not self.get('APIAuth').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context externals::ExternalsRoot 
+
+	inv ExternalsRootRequiredAPIDescriptions ('ExternalsRoot requires the property APIDescriptions'):
+	if  not self.get('APIDescriptions').oclIsUndefined()
+	then true
+	else null
+	endif
+
+endpackage
+

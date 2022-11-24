@@ -1,0 +1,207 @@
+-- OCL contraints for /C:/Users/ruben/22.runtime-json-schema/accesses/accesses
+import 'http://jku.bise.at/accesses'
+
+package accesses
+
+	context accesses::AccessesRootExternalAccessItemsInputItems 
+
+	inv AccessesRootExternalAccessItemsInputItemsRequiredattr ('AccessesRootExternalAccessItemsInputItems requires the property attr'):
+	if  not self.get('attr').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsInputItems 
+
+	inv AccessesRootExternalAccessItemsInputItemsRequiredAPIInput ('AccessesRootExternalAccessItemsInputItems requires the property APIInput'):
+	if  not self.get('APIInput').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsInputItems 
+
+	inv AccessesRootExternalAccessItemsInputItemsRequiredway ('AccessesRootExternalAccessItemsInputItems requires the property way'):
+	if  not self.get('way').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsInputItems 
+
+	inv AccessesRootExternalAccessItemsInputItemsRequiredvalue ('AccessesRootExternalAccessItemsInputItems requires the property value'):
+	if  not self.get('value').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsOutputItems 
+
+	inv AccessesRootExternalAccessItemsOutputItemsRequiredattr ('AccessesRootExternalAccessItemsOutputItems requires the property attr'):
+	if  not self.get('attr').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsOutputItems 
+
+	inv AccessesRootExternalAccessItemsOutputItemsRequiredAPIOutput ('AccessesRootExternalAccessItemsOutputItems requires the property APIOutput'):
+	if  not self.get('APIOutput').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsBodyItems 
+
+	inv AccessesRootExternalAccessItemsBodyItemsRequiredattr ('AccessesRootExternalAccessItemsBodyItems requires the property attr'):
+	if  not self.get('attr').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsBodyItems 
+
+	inv AccessesRootExternalAccessItemsBodyItemsRequiredAPIBody ('AccessesRootExternalAccessItemsBodyItems requires the property APIBody'):
+	if  not self.get('APIBody').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredonChange ('AccessesRootExternalAccessItemsTrigger requires the property onChange'):
+	if  not self.get('onChange').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredonCreate ('AccessesRootExternalAccessItemsTrigger requires the property onCreate'):
+	if  not self.get('onCreate').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredonMove ('AccessesRootExternalAccessItemsTrigger requires the property onMove'):
+	if  not self.get('onMove').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredonDelete ('AccessesRootExternalAccessItemsTrigger requires the property onDelete'):
+	if  not self.get('onDelete').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredonAccess ('AccessesRootExternalAccessItemsTrigger requires the property onAccess'):
+	if  not self.get('onAccess').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredonLoad ('AccessesRootExternalAccessItemsTrigger requires the property onLoad'):
+	if  not self.get('onLoad').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItemsTrigger 
+
+	inv AccessesRootExternalAccessItemsTriggerRequiredtimeTrigger ('AccessesRootExternalAccessItemsTrigger requires the property timeTrigger'):
+	if  not self.get('timeTrigger').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredname ('AccessesRootExternalAccessItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredpath ('AccessesRootExternalAccessItems requires the property path'):
+	if  not self.get('path').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredontological ('AccessesRootExternalAccessItems requires the property ontological'):
+	if  not self.get('ontological').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredclassname ('AccessesRootExternalAccessItems requires the property classname'):
+	if  not self.get('classname').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredmethod ('AccessesRootExternalAccessItems requires the property method'):
+	if  not self.get('method').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredauth ('AccessesRootExternalAccessItems requires the property auth'):
+	if  not self.get('auth').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredinput ('AccessesRootExternalAccessItems requires the property input'):
+	if  not self.get('input').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredoutput ('AccessesRootExternalAccessItems requires the property output'):
+	if  not self.get('output').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredbody ('AccessesRootExternalAccessItems requires the property body'):
+	if  not self.get('body').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context accesses::AccessesRootExternalAccessItems 
+
+	inv AccessesRootExternalAccessItemsRequiredtrigger ('AccessesRootExternalAccessItems requires the property trigger'):
+	if  not self.get('trigger').oclIsUndefined()
+	then true
+	else null
+	endif
+
+endpackage
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<feature id="accesses.accesses.feature" version="0.0.0">
+		<category name="main"/>
+	</feature>
+	<feature id="accesses.accesses.feature.source" version="0.0.0">
+		<category name="main.source"/>
+	</feature>
+	<category-def name="main" label="Accesses"/>
+	<category-def name="main.source" label="Accesses (Sources)"/>
+</site>

@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: externals.externals
+Bundle-ManifestVersion: 2
+Bundle-Name: externals.externals
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: externals.externals; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: externals,org.eclipse.xtext,org.eclipse.xtext.xbase,org.
+ eclipse.equinox.common;bundle-version="3.5.0",org.eclipse.ocl.xtext.com
+ pleteocl,relatedSchemas,org.eclipse.emf.converter,jku.se.atl.transforma
+ tion.utils,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: externals.externals.parser.antlr.lexer,
+ externals.externals.scoping,
+ externals.externals.parser.antlr.internal,
+ externals.externals.validation,
+ externals.externals.parser.antlr,
+ externals.externals,
+ externals.externals.serializer,
+ externals.externals.services,
+ externals.externals.generator,
+ externals.externals.formatting2
+Import-Package: org.apache.log4j

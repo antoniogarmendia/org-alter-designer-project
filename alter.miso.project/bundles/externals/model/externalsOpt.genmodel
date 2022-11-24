@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/externals/src-gen" modelPluginID="externals" modelName="ExternalsOpt" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="11.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>externalsOpt.ecore</foreignModel>
+  <genPackages prefix="Externals" disposableProviderFactory="true">
+    <ecorePackage href="externalsOpt.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRoot"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRoot/externalsRoot"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRoot/APIDescriptions"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="externalsOpt.ecore#//ExternalsRoot/get"/>
+        <genParameters>
+          <ecoreParameter href="externalsOpt.ecore#//ExternalsRoot/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptions"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptions/APIDescriptions"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/protocol"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/url"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/paths"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/APIAuth"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/get"/>
+        <genParameters>
+          <ecoreParameter href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsProtocol"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsProtocol/protocol"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsUrl"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsUrl/url"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPaths"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPaths/paths"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/route"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/parameters"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/outputs"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/get"/>
+        <genParameters>
+          <ecoreParameter href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsRoute"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsRoute/route"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParameters"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParameters/parameters"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems/type"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems/get"/>
+        <genParameters>
+          <ecoreParameter href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsType"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsType/type"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputs"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputs/outputs"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/type"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/JSONPath"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/get"/>
+        <genParameters>
+          <ecoreParameter href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsType"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsType/type"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsJSONPath"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsJSONPath/JSONPath"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuth"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuth/APIAuth"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems/key"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems/get"/>
+        <genParameters>
+          <ecoreParameter href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsKey"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsKey/key"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsPropertiesAbstract"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

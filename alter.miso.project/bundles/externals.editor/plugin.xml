@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated externalsOpt -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="externals.presentation.ExternalsModelWizardID"
+            name="%_UI_ExternalsModelWizard_label"
+            class="externals.presentation.ExternalsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ExternalsModelFile.gif">
+         <description>%_UI_ExternalsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated externalsOpt -->
+      <editor
+            id="externals.presentation.ExternalsEditorID"
+            name="%_UI_ExternalsEditor_label"
+            icon="icons/full/obj16/ExternalsModelFile.gif"
+            extensions="externals"
+            class="externals.presentation.ExternalsEditor"
+            contributorClass="externals.presentation.ExternalsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

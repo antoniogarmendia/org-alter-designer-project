@@ -1,0 +1,47 @@
+-- OCL contraints for /C:/Users/ruben/22.runtime-json-schema/codesinfos/codesinfos
+import 'http://jku.bise.at/codesinfos'
+
+package codesinfos
+
+	context codesinfos::CodesinfosRootCodesItems 
+
+	inv CodesinfosRootCodesItemsRequiredname ('CodesinfosRootCodesItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context codesinfos::CodesinfosRootCodesItems 
+
+	inv CodesinfosRootCodesItemsRequiredclassname ('CodesinfosRootCodesItems requires the property classname'):
+	if  not self.get('classname').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context codesinfos::CodesinfosRootCodesItems 
+
+	inv CodesinfosRootCodesItemsRequirednodename ('CodesinfosRootCodesItems requires the property nodename'):
+	if  not self.get('nodename').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context codesinfos::CodesinfosRoot 
+
+	inv CodesinfosRootRequiredname ('CodesinfosRoot requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context codesinfos::CodesinfosRoot 
+
+	inv CodesinfosRootRequiredcodes ('CodesinfosRoot requires the property codes'):
+	if  not self.get('codes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+endpackage
+

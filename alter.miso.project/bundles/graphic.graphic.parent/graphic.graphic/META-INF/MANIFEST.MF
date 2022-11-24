@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: graphic.graphic
+Bundle-ManifestVersion: 2
+Bundle-Name: graphic.graphic
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: graphic.graphic; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: graphic,org.eclipse.xtext,org.eclipse.xtext.xbase,org.ec
+ lipse.equinox.common;bundle-version="3.5.0",org.eclipse.ocl.xtext.compl
+ eteocl,relatedSchemas,org.eclipse.emf.converter,jku.se.atl.transformati
+ on.utils,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: graphic.graphic.validation,
+ graphic.graphic.scoping,
+ graphic.graphic.formatting2,
+ graphic.graphic.parser.antlr,
+ graphic.graphic,
+ graphic.graphic.serializer,
+ graphic.graphic.parser.antlr.internal,
+ graphic.graphic.services,
+ graphic.graphic.parser.antlr.lexer,
+ graphic.graphic.generator
+Import-Package: org.apache.log4j

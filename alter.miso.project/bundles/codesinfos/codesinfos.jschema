@@ -1,0 +1,30 @@
+{
+	"type":"object",
+	"additionalProperties": false,
+	"properties":{
+		"name": {
+			"type":"string"
+		},
+		"codes":{
+			"type":"array",
+			"items":{
+				"type":"object",
+				"additionalProperties": false,
+				"properties":{
+					"name": {
+						"type":"string"
+					},
+					"classname": {
+						"type":"string",
+						"$comment":"it should be class"
+					},
+					"nodename": {
+						"type":"string"
+					}
+				},
+				"required":["name", "classname", "nodename"]
+			}
+		}
+	},
+	"required":["name", "codes"]
+}

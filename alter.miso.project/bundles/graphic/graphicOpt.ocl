@@ -1,0 +1,287 @@
+-- OCL contraints for /C:/Users/ruben/22.runtime-json-schema/graphic/graphic
+import 'http://jku.bise.at/graphic'
+
+package graphic
+
+	context graphic::GraphicRootClassesItemsVersions 
+
+	inv GraphicRootClassesItemsVersionsRequiredv1 ('GraphicRootClassesItemsVersions requires the property v1'):
+	if  not self.get('v1').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsVersions 
+
+	inv GraphicRootClassesItemsVersionsRequiredv2 ('GraphicRootClassesItemsVersions requires the property v2'):
+	if  not self.get('v2').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsVersions 
+
+	inv GraphicRootClassesItemsVersionsRequiredv3 ('GraphicRootClassesItemsVersions requires the property v3'):
+	if  not self.get('v3').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsVname 
+
+	inv GraphicRootClassesItemsVnameRequiredv1 ('GraphicRootClassesItemsVname requires the property v1'):
+	if  not self.get('v1').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsVname 
+
+	inv GraphicRootClassesItemsVnameRequiredv2 ('GraphicRootClassesItemsVname requires the property v2'):
+	if  not self.get('v2').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsVname 
+
+	inv GraphicRootClassesItemsVnameRequiredv3 ('GraphicRootClassesItemsVname requires the property v3'):
+	if  not self.get('v3').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredplanes ('GraphicRootClassesItemsConstraints requires the property planes'):
+	if  not self.get('planes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredilumination ('GraphicRootClassesItemsConstraints requires the property ilumination'):
+	if  not self.get('ilumination').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredsizeMax ('GraphicRootClassesItemsConstraints requires the property sizeMax'):
+	if  not self.get('sizeMax').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredsizeMin ('GraphicRootClassesItemsConstraints requires the property sizeMin'):
+	if  not self.get('sizeMin').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredoverlapping ('GraphicRootClassesItemsConstraints requires the property overlapping'):
+	if  not self.get('overlapping').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredxToOriginPos ('GraphicRootClassesItemsConstraints requires the property xToOriginPos'):
+	if  not self.get('xToOriginPos').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredyToOriginPos ('GraphicRootClassesItemsConstraints requires the property yToOriginPos'):
+	if  not self.get('yToOriginPos').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredzToOriginPos ('GraphicRootClassesItemsConstraints requires the property zToOriginPos'):
+	if  not self.get('zToOriginPos').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraints 
+
+	inv GraphicRootClassesItemsConstraintsRequiredrotation ('GraphicRootClassesItemsConstraints requires the property rotation'):
+	if  not self.get('rotation').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredname ('GraphicRootClassesItemsConnectionsItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredtype ('GraphicRootClassesItemsConnectionsItems requires the property type'):
+	if  not self.get('type').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredcolor ('GraphicRootClassesItemsConnectionsItems requires the property color'):
+	if  not self.get('color').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredtextColor ('GraphicRootClassesItemsConnectionsItems requires the property textColor'):
+	if  not self.get('textColor').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequireddecorator ('GraphicRootClassesItemsConnectionsItems requires the property decorator'):
+	if  not self.get('decorator').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredpattern ('GraphicRootClassesItemsConnectionsItems requires the property pattern'):
+	if  not self.get('pattern').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredwidth ('GraphicRootClassesItemsConnectionsItems requires the property width'):
+	if  not self.get('width').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredposition ('GraphicRootClassesItemsConnectionsItems requires the property position'):
+	if  not self.get('position').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConnectionsItems 
+
+	inv GraphicRootClassesItemsConnectionsItemsRequiredtarget ('GraphicRootClassesItemsConnectionsItems requires the property target'):
+	if  not self.get('target').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItems 
+
+	inv GraphicRootClassesItemsRequiredname ('GraphicRootClassesItems requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItems 
+
+	inv GraphicRootClassesItemsRequiredversions ('GraphicRootClassesItems requires the property versions'):
+	if  not self.get('versions').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItems 
+
+	inv GraphicRootClassesItemsRequiredvname ('GraphicRootClassesItems requires the property vname'):
+	if  not self.get('vname').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItems 
+
+	inv GraphicRootClassesItemsRequiredshowAttributes ('GraphicRootClassesItems requires the property showAttributes'):
+	if  not self.get('showAttributes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItems 
+
+	inv GraphicRootClassesItemsRequiredconstraints ('GraphicRootClassesItems requires the property constraints'):
+	if  not self.get('constraints').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItems 
+
+	inv GraphicRootClassesItemsRequiredconnections ('GraphicRootClassesItems requires the property connections'):
+	if  not self.get('connections').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRoot 
+
+	inv GraphicRootRequiredname ('GraphicRoot requires the property name'):
+	if  not self.get('name').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRoot 
+
+	inv GraphicRootRequiredclasses ('GraphicRoot requires the property classes'):
+	if  not self.get('classes').oclIsUndefined()
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraintsCategoryBitMask
+
+	inv GraphicRootClassesItemsConstraintsCategoryBitMaskIsInteger('The value of GraphicRootClassesItemsConstraintsCategoryBitMask.categoryBitMask must be integer'):
+	if categoryBitMask.floor() = categoryBitMask
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraintsCollisionBitMask
+
+	inv GraphicRootClassesItemsConstraintsCollisionBitMaskIsInteger('The value of GraphicRootClassesItemsConstraintsCollisionBitMask.collisionBitMask must be integer'):
+	if collisionBitMask.floor() = collisionBitMask
+	then true
+	else null
+	endif
+
+	context graphic::GraphicRootClassesItemsConstraintsContactTestBitMask
+
+	inv GraphicRootClassesItemsConstraintsContactTestBitMaskIsInteger('The value of GraphicRootClassesItemsConstraintsContactTestBitMask.contactTestBitMask must be integer'):
+	if contactTestBitMask.floor() = contactTestBitMask
+	then true
+	else null
+	endif
+
+endpackage
+

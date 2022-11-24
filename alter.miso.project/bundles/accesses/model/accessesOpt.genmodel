@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/accesses/src-gen" modelPluginID="accesses" modelName="AccessesOpt" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="11.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>accessesOpt.ecore</foreignModel>
+  <genPackages prefix="Accesses" disposableProviderFactory="true">
+    <ecorePackage href="accessesOpt.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRoot"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRoot/accessesRoot"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRoot/ExternalAccess"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="accessesOpt.ecore#//AccessesRoot/get"/>
+        <genParameters>
+          <ecoreParameter href="accessesOpt.ecore#//AccessesRoot/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccess"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccess/ExternalAccess"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/name"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/path"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/ontological"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/classname"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/method"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/auth"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/input"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/output"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/body"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItems/trigger"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="accessesOpt.ecore#//AccessesRootExternalAccessItems/get"/>
+        <genParameters>
+          <ecoreParameter href="accessesOpt.ecore#//AccessesRootExternalAccessItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsName"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsName/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsPath"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsPath/path"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOntological"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOntological/ontological"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsClassname"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsClassname/classname"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsMethod"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsMethod/method"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsAuth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsAuth/auth"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInput"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInput/input"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/attr"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/APIInput"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/way"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/value"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/get"/>
+        <genParameters>
+          <ecoreParameter href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsAttr"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsAttr/attr"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsAPIInput"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsAPIInput/APIInput"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsWay"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsWay/way"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsValue"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsValue/value"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutput"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutput/output"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems/attr"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems/APIOutput"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems/get"/>
+        <genParameters>
+          <ecoreParameter href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsAttr"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsAttr/attr"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsAPIOutput"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsAPIOutput/APIOutput"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBody"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBody/body"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems/items"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems/attr"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems/APIBody"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems/get"/>
+        <genParameters>
+          <ecoreParameter href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsAttr"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsAttr/attr"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsAPIBody"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsAPIBody/APIBody"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/trigger"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/onChange"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/onCreate"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/onMove"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/onDelete"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/onAccess"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/onLoad"/>
+      </genFeatures>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/timeTrigger"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/get"/>
+        <genParameters>
+          <ecoreParameter href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/get/key"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnChange"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnChange/onChange"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnCreate"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnCreate/onCreate"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnMove"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnMove/onMove"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnDelete"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnDelete/onDelete"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnAccess"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnAccess/onAccess"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnLoad"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnLoad/onLoad"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerTimeTrigger"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerTimeTrigger/timeTrigger"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsPropertiesAbstract"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerPropertiesAbstract"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

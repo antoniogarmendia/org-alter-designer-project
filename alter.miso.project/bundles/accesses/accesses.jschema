@@ -1,0 +1,120 @@
+{
+	"type":"object",
+	"additionalProperties": false,
+	"properties":{
+		"ExternalAccess":{
+			"type":"array",
+			"items":{
+				"type":"object",
+				"additionalProperties": false,
+				"properties":{
+					"name": {
+						"type":"string"
+					},
+					"path": {
+						"type":"string"
+					},
+					"ontological": {
+						"type":"string"
+					},
+					"classname": {
+						"type":"string"
+					},
+					"method": {
+						"type":"string"
+					},
+					
+					"auth": {
+						"type":"string"
+					},
+					"input": {
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"attr":{
+									"type":"string"
+								},
+								"APIInput":{
+									"type":"string"
+								},
+								"way":{
+									"type":"string"
+								},
+								"value":{
+									"type":"string"
+								}
+							},
+							"required":["attr", "APIInput", "way", "value"]
+						}
+					},
+					
+					"output": {
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"attr":{
+									"type":"string"
+								},
+								"APIOutput":{
+									"type":"string"
+								}
+							},
+							"required":["attr", "APIOutput"]
+						}
+					},
+					
+					"body": {
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"attr":{
+									"type":"string"
+								},
+								"APIBody":{
+									"type":"string"
+								}
+							},
+							"required":["attr", "APIBody"]
+						}
+					},
+					
+					"trigger": {
+						"type":"object",
+						"additionalProperties": false,
+						"properties":{
+							"onChange":{
+								"type":"boolean"
+							},
+							"onCreate":{
+								"type":"boolean"
+							},
+							"onMove":{
+								"type":"boolean"
+							},
+							"onDelete":{
+								"type":"boolean"
+							},
+							"onAccess":{
+								"type":"boolean"
+							},
+							"onLoad":{
+								"type":"boolean"
+							},
+							"timeTrigger":{
+								"type":"number"
+							}
+						},
+						"required":["onChange", "onCreate", "onMove", "onDelete", "onAccess", "onLoad", "timeTrigger"]
+					}
+				},
+				"required":["name", "path", "ontological", "classname", "method", "auth", "input", "output", "body", "trigger"]	
+			}	
+		}
+	}
+}

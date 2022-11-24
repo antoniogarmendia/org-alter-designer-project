@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jsongrammar:JsonGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:jsongrammar="http://at.jku.bise/jsongrammar/1.0" nsURI="http://jku.bise.at/accesses">
+  <detailedGrammar>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsPath/path"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOntological/ontological"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsClassname/classname"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsMethod/method"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsAuth/auth"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsAttr/attr"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsAPIInput/APIInput"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsWay/way"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItemsValue/value"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsAttr/attr"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItemsAPIOutput/APIOutput"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsAttr/attr"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItemsAPIBody/APIBody"/>
+    <keywords xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/trigger"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnChange/onChange"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnCreate/onCreate"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnMove/onMove"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnDelete/onDelete"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnAccess/onAccess"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerOnLoad/onLoad"/>
+    <keywords xsi:type="ecore:EAttribute" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTriggerTimeTrigger/timeTrigger"/>
+    <keywords xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccess/ExternalAccess"/>
+    <keywords xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInput/input"/>
+    <keywords xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutput/output"/>
+    <keywords xsi:type="ecore:EReference" href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBody/body"/>
+    <curlyBracesReferences href="accessesOpt.ecore#//AccessesRoot/accessesRoot"/>
+    <curlyBracesReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItems/items"/>
+    <curlyBracesReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInputItems/items"/>
+    <curlyBracesReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutputItems/items"/>
+    <curlyBracesReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBodyItems/items"/>
+    <curlyBracesReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsTrigger/trigger"/>
+    <bracketsReferences href="http://at.jku.bise/jsonMM#//ArrayValue/value"/>
+    <bracketsReferences href="accessesOpt.ecore#//AccessesRootExternalAccess/ExternalAccess"/>
+    <bracketsReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsInput/input"/>
+    <bracketsReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsOutput/output"/>
+    <bracketsReferences href="accessesOpt.ecore#//AccessesRootExternalAccessItemsBody/body"/>
+    <keyValue href="http://at.jku.bise/jsonMM#//KeyValuePair/key"/>
+    <curlyBracesEClass href="http://at.jku.bise/jsonMM#//ObjectValue"/>
+    <rootEClass href="accessesOpt.ecore#//AccessesRoot"/>
+  </detailedGrammar>
+</jsongrammar:JsonGrammar>

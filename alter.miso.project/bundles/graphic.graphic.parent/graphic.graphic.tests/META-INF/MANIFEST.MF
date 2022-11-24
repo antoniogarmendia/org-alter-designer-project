@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: graphic.graphic.tests
+Bundle-ManifestVersion: 2
+Bundle-Name: graphic.graphic.tests
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: graphic.graphic.tests; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: graphic.graphic,
+ graphic,
+ org.junit.jupiter.api;bundle-version="[5.0.0,6.0.0)",
+ org.eclipse.xtext.testing,
+ org.eclipse.xtext.xbase.testing,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: graphic.graphic.tests;x-internal=true

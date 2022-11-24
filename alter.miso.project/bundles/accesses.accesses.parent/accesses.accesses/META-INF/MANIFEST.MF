@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: accesses.accesses
+Bundle-ManifestVersion: 2
+Bundle-Name: accesses.accesses
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: accesses.accesses; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: accesses,org.eclipse.xtext,org.eclipse.xtext.xbase,org.e
+ clipse.equinox.common;bundle-version="3.5.0",org.eclipse.ocl.xtext.comp
+ leteocl,relatedSchemas,org.eclipse.emf.converter,jku.se.atl.transformat
+ ion.utils,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: accesses.accesses,
+ accesses.accesses.parser.antlr,
+ accesses.accesses.scoping,
+ accesses.accesses.generator,
+ accesses.accesses.parser.antlr.internal,
+ accesses.accesses.parser.antlr.lexer,
+ accesses.accesses.services,
+ accesses.accesses.serializer,
+ accesses.accesses.formatting2,
+ accesses.accesses.validation
+Import-Package: org.apache.log4j

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="externals" nsURI="http://jku.bise.at/externals" nsPrefix="externals">
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRoot">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;APIDescriptions&quot;.equals(key) ){return this.getAPIDescriptions();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (ExternalsRootPropertiesAbstract child : this.externalsRoot){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalsRoot" upperBound="-1"
+        eType="#//ExternalsRootPropertiesAbstract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="APIDescriptions" ordered="false"
+        unique="false" upperBound="-1" eType="#//ExternalsRootAPIDescriptionsItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getExternalsRoot().stream().filter(externals.ExternalsRootAPIDescriptions.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptions.class::cast).map(instance->instance.getAPIDescriptions()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptions" eSuperTypes="#//ExternalsRootPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="APIDescriptions" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="APIDescriptions"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;protocol&quot;.equals(key) ){return this.getProtocol();}&#xA;&#xA;if (&quot;url&quot;.equals(key) ){return this.getUrl();}&#xA;&#xA;if (&quot;paths&quot;.equals(key) ){return this.getPaths();}&#xA;&#xA;if (&quot;APIAuth&quot;.equals(key) ){return this.getAPIAuth();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (ExternalsRootAPIDescriptionsItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsName.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocol" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsProtocol.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsProtocol.class::cast).map(instance->instance.getProtocol()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsUrl.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsUrl.class::cast).map(instance->instance.getUrl()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paths" ordered="false"
+        unique="false" upperBound="-1" eType="#//ExternalsRootAPIDescriptionsItemsPathsItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPaths.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPaths.class::cast).map(instance->instance.getPaths()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="APIAuth" ordered="false"
+        unique="false" upperBound="-1" eType="#//ExternalsRootAPIDescriptionsItemsAPIAuthItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsAPIAuth.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsAPIAuth.class::cast).map(instance->instance.getAPIAuth()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsName"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsProtocol"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocol" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="protocol"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsUrl"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="url"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPaths"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paths" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPathsItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="paths"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;route&quot;.equals(key) ){return this.getRoute();}&#xA;&#xA;if (&quot;parameters&quot;.equals(key) ){return this.getParameters();}&#xA;&#xA;if (&quot;outputs&quot;.equals(key) ){return this.getOutputs();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="route" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsRoute.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsRoute.class::cast).map(instance->instance.getRoute()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" ordered="false"
+        unique="false" upperBound="-1" eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsParameters.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsParameters.class::cast).map(instance->instance.getParameters()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" ordered="false"
+        unique="false" upperBound="-1" eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems"
+        changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputs.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputs.class::cast).map(instance->instance.getOutputs()).orElse(new org.eclipse.emf.common.util.BasicEList&lt;>());"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsRoute"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="route" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="route"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsParameters"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="parameters"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;type&quot;.equals(key) ){return this.getType();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsPropertiesAbstract"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsName.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsType.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsType.class::cast).map(instance->instance.getType()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsName"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsType"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="type"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsOutputs"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputs" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="outputs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;type&quot;.equals(key) ){return this.getType();}&#xA;&#xA;if (&quot;JSONPath&quot;.equals(key) ){return this.getJSONPath();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsName.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsType.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsType.class::cast).map(instance->instance.getType()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="JSONPath" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsJSONPath.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsJSONPath.class::cast).map(instance->instance.getJSONPath()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsName"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsType"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="type"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsJSONPath"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="JSONPath" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="JSONPath"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsAPIAuth"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="array"/>
+    </eAnnotations>
+    <eAnnotations source="Comment">
+      <details key="Comment" value="can be empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="APIAuth" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsAPIAuthItems" containment="true">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="APIAuth"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsAPIAuthItems">
+    <eAnnotations source="Type">
+      <details key="Type" value="object"/>
+    </eAnnotations>
+    <eOperations name="get" ordered="false" unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="if (&quot;name&quot;.equals(key) ){return this.getName();}&#xA;&#xA;if (&quot;key&quot;.equals(key) ){return this.getKey();}&#xA;&#xA;java.util.List&lt;java.lang.Class> additionalOrPatternPropertyClasses = new java.util.ArrayList&lt;java.lang.Class>();&#xA;&#xA;for (ExternalsRootAPIDescriptionsItemsAPIAuthItemsPropertiesAbstract child : this.items){&#xA;&#x9;if (!java.util.Collections.disjoint(additionalOrPatternPropertyClasses, java.util.Arrays.asList(child.getClass().getInterfaces()))){&#xA;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;java.lang.reflect.Field keyField = child.getClass().getDeclaredField(&quot;key&quot;);&#xA;&#x9;&#x9;&#x9;if (jku.se.atl.transformation.utils.Utils.getIdentifier(keyField.get(child).toString()).equals(key)) {&#xA;&#x9;&#x9;&#x9;&#x9;java.lang.reflect.Field valueField = java.util.Arrays.asList(child.getClass().getDeclaredFields()).stream().filter(field -> field.getName().equals(&quot;additionalProperties&quot;) || field.getName().startsWith(&quot;patternProperties&quot;) ).findAny().get();&#xA;&#x9;&#x9;&#x9;&#x9;return valueField.get(child);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;} catch (Exception e) {&#xA;&#x9;&#x9;&#x9;e.printStackTrace();&#xA;&#x9;&#x9;&#x9;throw new RuntimeException(e);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;return null;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsPropertiesAbstract"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsAPIAuthItemsName.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsAPIAuthItemsName.class::cast).map(instance->instance.getName()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="suppressedIsSetVisibility" value="true"/>
+        <details key="suppressedUnsetVisibility" value="true"/>
+        <details key="suppressedSetVisibility" value="true"/>
+        <details key="notify" value="false"/>
+        <details key="property" value="Readonly"/>
+        <details key="get" value="return this.getItems().stream().filter(externals.ExternalsRootAPIDescriptionsItemsAPIAuthItemsKey.class::isInstance).findAny().map(externals.ExternalsRootAPIDescriptionsItemsAPIAuthItemsKey.class::cast).map(instance->instance.getKey()).orElse(null);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsAPIAuthItemsName"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsAPIAuthItemsKey"
+      eSuperTypes="#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsPropertiesAbstract">
+    <eAnnotations source="Type">
+      <details key="Type" value="string"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="Keyword">
+        <details key="Keyword" value="key"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootPropertiesAbstract" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsPropertiesAbstract"
+      abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalsRootAPIDescriptionsItemsAPIAuthItemsPropertiesAbstract"
+      abstract="true"/>
+</ecore:EPackage>

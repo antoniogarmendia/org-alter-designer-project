@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jsongrammar:JsonGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:jsongrammar="http://at.jku.bise/jsongrammar/1.0" nsURI="http://jku.bise.at/externals">
+  <detailedGrammar>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsProtocol/protocol"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsUrl/url"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsRoute/route"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItemsType/type"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsType/type"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItemsJSONPath/JSONPath"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsName/name"/>
+    <keywords xsi:type="ecore:EAttribute" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItemsKey/key"/>
+    <keywords xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptions/APIDescriptions"/>
+    <keywords xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPaths/paths"/>
+    <keywords xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParameters/parameters"/>
+    <keywords xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputs/outputs"/>
+    <keywords xsi:type="ecore:EReference" href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuth/APIAuth"/>
+    <curlyBracesReferences href="externalsOpt.ecore#//ExternalsRoot/externalsRoot"/>
+    <curlyBracesReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItems/items"/>
+    <curlyBracesReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItems/items"/>
+    <curlyBracesReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParametersItems/items"/>
+    <curlyBracesReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputsItems/items"/>
+    <curlyBracesReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuthItems/items"/>
+    <bracketsReferences href="http://at.jku.bise/jsonMM#//ArrayValue/value"/>
+    <bracketsReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptions/APIDescriptions"/>
+    <bracketsReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPaths/paths"/>
+    <bracketsReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsParameters/parameters"/>
+    <bracketsReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsPathsItemsOutputs/outputs"/>
+    <bracketsReferences href="externalsOpt.ecore#//ExternalsRootAPIDescriptionsItemsAPIAuth/APIAuth"/>
+    <keyValue href="http://at.jku.bise/jsonMM#//KeyValuePair/key"/>
+    <curlyBracesEClass href="http://at.jku.bise/jsonMM#//ObjectValue"/>
+    <rootEClass href="externalsOpt.ecore#//ExternalsRoot"/>
+  </detailedGrammar>
+</jsongrammar:JsonGrammar>

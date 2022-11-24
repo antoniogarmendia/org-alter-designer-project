@@ -1,0 +1,125 @@
+{
+	"type":"object",
+	"additionalProperties": false,
+	"properties":{
+		"name": {
+			"type":"string"
+		},
+		"URI":{
+			"type":"string",
+			"format":"uri"
+		},
+		"onlyCodes":{
+			"type":"boolean"
+		},
+		"bluetooth":{
+			"type":"boolean"
+		},
+		"external":{
+			"type":"boolean"
+		},
+		"firebase":{
+			"type":"boolean"
+		},
+		"physics":{
+			"type":"boolean"
+		},
+		"gameloop":{
+			"type":"boolean"
+		},
+		"classes":{
+			"type":"array",
+			"items":{
+				"type":"object",
+				"additionalProperties": false,
+				"properties":{
+					"name": {
+						"type":"string"
+					},
+					"abstract": {
+						"type":"string"
+					},
+					"attributes": {
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"name": {
+									"type":"string"
+								},
+								"type": {
+									"type":"string"
+								},
+								"min": {
+									"type":"string"
+								},
+								"max": {
+									"type":"string"
+								},
+								"default": {
+									"type":"string"
+								},
+								"readOnly": {
+									"type":"boolean"
+								},
+								"isParam": {
+									"type":"boolean"
+								},
+								"isKey": {
+									"type":"boolean"
+								}
+							},
+							"required":["name", "type", "max", "min", "default", "readOnly", "isParam"]
+						}
+					},
+					"references": {
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"name": {
+									"type":"string"
+								},
+								"containtment": {
+									"type":"string"
+								},
+								"min": {
+									"type":"string"
+								},
+								"max": {
+									"type":"string"
+								},
+								"target": {
+									"type":"string"
+								},
+								"opposite": {
+									"type":"string"
+								}
+							},
+							"required":["name", "min", "max", "target"]
+						}
+					},
+					"autoID": {
+						"type":"boolean"
+					},
+					"onlyCodes": {
+						"type":"boolean",
+						"$comment":"this is the case when this particular class is or not with codes detection"
+					},
+					"bluetooth": {
+						"type":"boolean",
+						"$comment":"this is the case when this particular class is or not with bluetooth"
+					},
+					"noSCN": {
+						"type":"boolean",
+						"$comment":"discard any SCN image search"
+					}
+				},
+				"required":["name", "attributes", "references"]
+			}
+		}
+	},
+	"required":["name", "onlyCodes", "bluetooth", "external", "classes"]
+}

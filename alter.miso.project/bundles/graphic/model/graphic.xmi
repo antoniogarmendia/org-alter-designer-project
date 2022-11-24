@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trace:TraceLinkSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http://www.eclipse.org/m2m/atl/emftvm/2011/Trace" defaultSourceElements="//@rules.0/@links.0/@sourceElements.0 //@rules.1/@links.0/@sourceElements.0 //@rules.1/@links.1/@sourceElements.0 //@rules.1/@links.2/@sourceElements.0 //@rules.1/@links.3/@sourceElements.0 //@rules.1/@links.4/@sourceElements.0 //@rules.1/@links.5/@sourceElements.0 //@rules.1/@links.6/@sourceElements.0 //@rules.1/@links.7/@sourceElements.0 //@rules.1/@links.8/@sourceElements.0 //@rules.1/@links.9/@sourceElements.0 //@rules.1/@links.10/@sourceElements.0 //@rules.1/@links.11/@sourceElements.0 //@rules.1/@links.12/@sourceElements.0 //@rules.1/@links.13/@sourceElements.0 //@rules.1/@links.14/@sourceElements.0 //@rules.1/@links.15/@sourceElements.0 //@rules.1/@links.16/@sourceElements.0 //@rules.1/@links.17/@sourceElements.0 //@rules.1/@links.18/@sourceElements.0 //@rules.1/@links.19/@sourceElements.0 //@rules.1/@links.20/@sourceElements.0 //@rules.1/@links.21/@sourceElements.0 //@rules.1/@links.22/@sourceElements.0 //@rules.1/@links.23/@sourceElements.0 //@rules.1/@links.24/@sourceElements.0 //@rules.1/@links.25/@sourceElements.0 //@rules.1/@links.26/@sourceElements.0 //@rules.1/@links.27/@sourceElements.0 //@rules.1/@links.28/@sourceElements.0 //@rules.1/@links.29/@sourceElements.0 //@rules.1/@links.30/@sourceElements.0 //@rules.1/@links.31/@sourceElements.0 //@rules.1/@links.32/@sourceElements.0 //@rules.1/@links.33/@sourceElements.0 //@rules.1/@links.34/@sourceElements.0 //@rules.1/@links.35/@sourceElements.0 //@rules.1/@links.36/@sourceElements.0 //@rules.1/@links.37/@sourceElements.0 //@rules.1/@links.38/@sourceElements.0 //@rules.1/@links.39/@sourceElements.0 //@rules.1/@links.40/@sourceElements.0 //@rules.1/@links.41/@sourceElements.0 //@rules.1/@links.42/@sourceElements.0 //@rules.1/@links.43/@sourceElements.0 //@rules.1/@links.44/@sourceElements.0 //@rules.1/@links.45/@sourceElements.0 //@rules.1/@links.46/@sourceElements.0 //@rules.1/@links.47/@sourceElements.0 //@rules.2/@links.0/@sourceElements.0 //@rules.2/@links.1/@sourceElements.0 //@rules.2/@links.2/@sourceElements.0 //@rules.2/@links.3/@sourceElements.0">
+  <rules rule="JsonSchemaToEPackage">
+    <links>
+      <sourceElements name="jsonSchema" defaultFor="/">
+        <object href="../graphic.jschema#/"/>
+      </sourceElements>
+      <targetElements name="ePackage">
+        <object href="graphicOpt.ecore#/"/>
+      </targetElements>
+      <targetElements name="jsonGrammar">
+        <object href="graphic.jsongrammar#/"/>
+      </targetElements>
+      <targetElements name="detailedGrammar">
+        <object href="graphic.jsongrammar#//@detailedGrammar"/>
+      </targetElements>
+      <targetElements name="relatedSchemas">
+        <object href="graphic.relatedSchemas#/"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapObjectSchemaToEClass">
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRoot"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootURI"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClasses"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersions"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV1"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV2"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV3"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVname"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV1"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV2"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV3"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributesItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsIlumination"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMax"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMin"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeInit"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsOverlapping"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.6/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsXToOriginPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.7/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsYToOriginPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.8/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsZToOriginPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.9/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsRotation"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.10/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsText"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.11/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsTrim"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.12/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCategoryBitMask"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.13/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCollisionBitMask"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.14/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsContactTestBitMask"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnections"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.0/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsName"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsType"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsColor"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTextColor"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecorator"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorColor"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorWidth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.7/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.8/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPattern"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.9/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsWidth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.10/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPosition"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="schema" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.11/@value"/>
+      </sourceElements>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTarget"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapItemsAnyOf1ToContainment">
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClasses/classes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.3/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributes/showAttributes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.4/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributes/materialAttributes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="itemsAnyOf1" defaultFor="/">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf"/>
+      </sourceElements>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnections/connections"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="createPropertiesContainment">
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRoot/graphicRoot"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItems/items"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersions/versions"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVname/vname"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraints/constraints"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="referenceName"/>
+      <sourceElements name="propertiesEClassName"/>
+      <sourceElements name="addToKeywords"/>
+      <sourceElements name="keyword"/>
+      <sourceElements name="lowerBound"/>
+      <sourceElements name="upperBound"/>
+      <targetElements name="eReference">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItems/items"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="createAbstractEClass" uniqueSourceElements="//@rules.4/@links.0/@sourceElements.0 //@rules.4/@links.1/@sourceElements.0 //@rules.4/@links.2/@sourceElements.0 //@rules.4/@links.3/@sourceElements.0 //@rules.4/@links.4/@sourceElements.0 //@rules.4/@links.5/@sourceElements.0">
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnamePropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name" uniqueFor="//@rules.4"/>
+      <targetElements name="eClass">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPropertiesAbstract"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapScalarTypeToEAttribute">
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootURI/URI"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV1/v1"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV2/v2"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVersionsV3/v3"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV1/v1"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV2/v2"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsVnameV3/v3"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsShowAttributesItems/items"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsMaterialAttributesItems/items"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes/planes"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsIlumination/ilumination"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMax/sizeMax"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeMin/sizeMin"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsSizeInit/sizeInit"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsOverlapping/overlapping"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsXToOriginPos/xToOriginPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsYToOriginPos/yToOriginPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsZToOriginPos/zToOriginPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsRotation/rotation"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsText/text"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsTrim/trim"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCategoryBitMask/categoryBitMask"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsCollisionBitMask/collisionBitMask"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsContactTestBitMask/contactTestBitMask"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsName/name"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsType/type"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsColor/color"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTextColor/textColor"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecorator/decorator"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorColor/decoratorColor"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorWidth/decoratorWidth"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsDecoratorPos/decoratorPos"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPattern/pattern"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsWidth/width"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsPosition/position"/>
+      </targetElements>
+    </links>
+    <links>
+      <sourceElements name="name"/>
+      <sourceElements name="eType">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </sourceElements>
+      <sourceElements name="addToKeywords"/>
+      <targetElements name="eAttribute">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConnectionsItemsTarget/target"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="mapComment">
+    <links>
+      <sourceElements name="commentSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.2/@keySchemaPairs.0/@value/@keywordDefinition.1"/>
+      </sourceElements>
+      <targetElements name="eAnnotation">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes/%Comment%"/>
+      </targetElements>
+      <targetElements name="entrySet">
+        <object href="graphicOpt.ecore#//GraphicRootClassesItemsConstraintsPlanes/%Comment%/@details.0"/>
+      </targetElements>
+    </links>
+  </rules>
+  <rules rule="requiredInPropertiesToOcl">
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.1/@value/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.5/@value/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.2/@keySchemaPairs.6/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.2/@keySchemaPairs.2/@value/@keywordDefinition.1/@anyOf/@anyOf1/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+    <links>
+      <sourceElements name="requiredSchemaDefinition">
+        <object href="../graphic.jschema#//@schema/@keywordDefinition.3"/>
+      </sourceElements>
+    </links>
+  </rules>
+</trace:TraceLinkSet>

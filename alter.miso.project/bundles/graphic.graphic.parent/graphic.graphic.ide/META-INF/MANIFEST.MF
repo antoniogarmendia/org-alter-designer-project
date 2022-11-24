@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: graphic.graphic.ide
+Bundle-ManifestVersion: 2
+Bundle-Name: graphic.graphic.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: graphic.graphic.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: graphic.graphic,
+ graphic,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: graphic.graphic.ide.contentassist.antlr,
+ graphic.graphic.ide.contentassist.antlr.lexer,
+ graphic.graphic.ide.contentassist.antlr.internal

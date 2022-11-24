@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: codesinfos.codesinfos
+Bundle-ManifestVersion: 2
+Bundle-Name: codesinfos.codesinfos
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: codesinfos.codesinfos; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: codesinfos,org.eclipse.xtext,org.eclipse.xtext.xbase,org
+ .eclipse.equinox.common;bundle-version="3.5.0",org.eclipse.ocl.xtext.co
+ mpleteocl,relatedSchemas,org.eclipse.emf.converter,jku.se.atl.transform
+ ation.utils,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: codesinfos.codesinfos.formatting2,
+ codesinfos.codesinfos.serializer,
+ codesinfos.codesinfos.parser.antlr,
+ codesinfos.codesinfos.scoping,
+ codesinfos.codesinfos,
+ codesinfos.codesinfos.services,
+ codesinfos.codesinfos.parser.antlr.lexer,
+ codesinfos.codesinfos.validation,
+ codesinfos.codesinfos.parser.antlr.internal,
+ codesinfos.codesinfos.generator
+Import-Package: org.apache.log4j

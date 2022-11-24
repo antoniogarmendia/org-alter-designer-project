@@ -1,0 +1,174 @@
+{
+	"type":"object",
+	"additionalProperties": false,
+	"properties":{
+		"name": {
+			"type":"string"
+		},
+		"URI":{
+			"type":"string",
+			"format":"uri"
+		},
+		"classes":{
+			"type":"array",
+			"items":{
+				"type":"object",
+				"additionalProperties": false,
+				"properties":{
+					"name": {
+						"type":"string"
+					},
+					"versions": {
+						"type":"object",
+						"additionalProperties": false,
+						"properties":{
+							"v1": {
+								"type":"string",
+								"format":"uri"
+							},
+							"v2": {
+								"type":"string",
+								"format":"uri"
+							},
+							"v3": {
+								"type":"string",
+								"format":"uri"
+							}
+						},
+						"required":["v1", "v2", "v3"]
+					},
+					"vname": {
+						"type":"object",
+						"additionalProperties": false,
+						"properties":{
+							"v1": {
+								"type":"string"
+							},
+							"v2": {
+								"type":"string"
+							},
+							"v3": {
+								"type":"string"
+							}
+						},
+						"required":["v1", "v2", "v3"]
+					},
+					"showAttributes": {
+						"type":"array",
+						"items":{
+							"type":"string"
+						}
+					},
+					"materialAttributes": {
+						"type":"array",
+						"items":{
+							"type":"string"
+						}
+					},
+					"constraints": {
+						"type":"object",
+						"additionalProperties": false,
+						"properties":{
+							"planes": {
+								"type":"string",
+								"$comment":"only values horizontal, verical or any"
+							},
+							"ilumination":{
+								"type":"string"
+							},
+							"sizeMax":{
+								"type":"string"
+							},
+							"sizeMin":{
+								"type":"string"
+							},
+							"sizeInit":{
+								"type":"string"
+							},
+							"overlapping":{
+								"type":"string"
+							},
+							"xToOriginPos":{
+								"type":"string"
+							},
+							"yToOriginPos":{
+								"type":"string"
+							},
+							"zToOriginPos":{
+								"type":"string"
+							},
+							"rotation":{
+								"type":"string"
+							},
+							"text":{
+								"type":"string"
+							},
+							"trim":{
+								"type":"boolean"
+							},
+							"categoryBitMask":{
+								"type":"integer"
+							},
+							"collisionBitMask":{
+								"type":"integer"
+							},
+							"contactTestBitMask":{
+								"type":"integer"
+							}
+						},
+						"required":["planes", "ilumination", "sizeMax", "sizeMin", "overlapping", "xToOriginPos", "yToOriginPos", "zToOriginPos", "rotation"]
+					},
+					"connections":{
+						"type":"array",
+						"items":{
+							"type":"object",
+							"additionalProperties": false,
+							"properties":{
+								"name":{
+									"type":"string"
+								},
+								"type":{
+									"type":"string"
+								},
+								"color":{
+									"type":"string"
+								},
+								"textColor":{
+									"type":"string"
+								},
+								"decorator":{
+									"type":"string"
+								},
+								"decoratorColor":{
+									"type":"string"
+								},
+								"decoratorWidth":{
+									"type":"string"
+								},
+								"decoratorPos":{
+									"type":"string"
+								},
+								"pattern":{
+									"type":"string"
+								},
+								"width":{
+									"type":"string"
+								},
+								"position":{
+									"type":"string"
+								},
+								"target":{
+									"type":"string"
+								}
+							},
+							"required":["name", "type", "color", "textColor", "decorator", "pattern", "width", "position", "target"]
+							
+						}
+					}
+				},
+				"required":["name", "versions", "vname", "showAttributes", "constraints", "connections"]
+			}	
+		}
+	},
+	"required":["name", "classes"]
+}
