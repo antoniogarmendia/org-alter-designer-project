@@ -1,0 +1,30 @@
+{
+	"name":"inventory",
+	"codes":[
+		{
+			"name":"Prueba 1",
+			"classname":"Monitor",
+			"nodename":"Prt"
+		},
+		{
+			"name":"00383634",
+			"classname":"PC",
+			"nodename":"New Mac"
+		},
+		{
+			"name":"00338564",
+			"classname":"Printer",
+			"nodename":"Primt"
+		},
+		{
+			"name":"00521545",
+			"classname":"Printer",
+			"nodename":"Printer HP"
+		},
+		{
+			"name":"ZUEXHMBC108187B",
+			"classname":"Monitor",
+			"nodename":"Monitor 2"
+		}
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"name":"inventory",
+	"classes":[
+		{
+			"name": "PC",
+			"versions": {
+				"v1":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/PC.scn?raw=true",
+				"v2":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/PC.scn?raw=true",
+				"v3":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/PC.scn?raw=true"
+			},
+			"vname":{
+				"v1":"PC",
+				"v2":"PC",
+				"v3":"PC"
+			},
+			"showAttributes":[
+				"model", "serialNumber", "IP", "MAC", "os", "owner"
+			],
+			"constraints":{
+				"planes":"any",
+				"ilumination":"any",
+				"sizeMax":"1",
+				"sizeMin":"1",
+				"overlapping":"true",
+				"xToOriginPos":"0",
+				"yToOriginPos":"0",
+				"zToOriginPos":"0",
+				"rotation":"0"
+			},
+			"connections":[
+				{
+					"name":"blue line",
+					"type":"line",
+					"color":"blue",
+					"textColor":"blue",
+					"decorator":"none",
+					"pattern":"none",
+					"width":"0.001",
+					"position":"default",
+					"target": "Monitor"
+				},
+				{
+					"name":"red line",
+					"type":"line",
+					"color":"red",
+					"textColor":"blue",
+					"decorator":"none",
+					"pattern":"none",
+					"width":"0.001",
+					"position":"default",
+					"target": "Printer"
+				}
+			]
+		},
+		{
+			"name": "Printer",
+			"versions": {
+				"v1":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/Printer.scn?raw=true",
+				"v2":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/Printer.scn?raw=true",
+				"v3":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/Printer.scn?raw=true"
+			},
+			"vname":{
+				"v1":"Printer",
+				"v2":"Printer",
+				"v3":"Printer"
+			},
+			"showAttributes":[
+				"model", "serialNumber", "pagesPerMinute"
+			],
+			"constraints":{
+				"planes":"any",
+				"ilumination":"any",
+				"sizeMax":"1",
+				"sizeMin":"1",
+				"overlapping":"true",
+				"xToOriginPos":"0",
+				"yToOriginPos":"0",
+				"zToOriginPos":"0",
+				"rotation":"0"
+			},
+			"connections":[
+			]
+		},
+		{
+			"name": "Monitor",
+			"versions": {
+				"v1":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/Monitor.scn?raw=true",
+				"v2":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/Monitor.scn?raw=true",
+				"v3":"https://github.com/Albertojuanse/miso_ar_test/blob/master/Ikea/Ikea/Models.scnassets/Monitor.scn?raw=true"
+			},
+			"vname":{
+				"v1":"Monitor",
+				"v2":"Monitor",
+				"v3":"Monitor"
+			},
+			"showAttributes":[
+				"model", "serialNumber", "inches"
+			],
+			"constraints":{
+				"planes":"any",
+				"ilumination":"any",
+				"sizeMax":"1",
+				"sizeMin":"1",
+				"overlapping":"true",
+				"xToOriginPos":"0",
+				"yToOriginPos":"0",
+				"zToOriginPos":"0",
+				"rotation":"0"
+			},
+			"connections":[
+			]
+		}
+	]
+}

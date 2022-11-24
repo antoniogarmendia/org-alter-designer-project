@@ -1,0 +1,189 @@
+{
+	"name":"inventory",
+	"classes":[
+		{
+			"name": "PC",
+			"abstract":"false",
+			"attributes":[
+				{
+					"name": "model",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"1",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "serialNumber",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"1",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":true
+				},
+				{
+					"name": "IP",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"0.0.0.0",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "MAC",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"00-00-00-00-00-00",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "owner",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"anyone",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "os",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"null",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				}
+			],
+			"references":[
+				{
+					"name": "monitors",
+					"containtment": "",
+					"min": "0",
+					"max":"-1",
+					"target": "Monitor",
+					"opposite": "null"
+				},
+				{
+					"name": "printers",
+					"containtment": "",
+					"min": "0",
+					"max":"-1",
+					"target": "Printer",
+					"opposite": "null"
+				}
+			],
+			"onlyCodes": true
+		},
+		{
+			"name": "Printer",
+			"abstract":"false",
+			"attributes":[
+				{
+					"name": "model",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"1",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "serialNumber",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"1",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":true
+				},
+				{
+					"name": "owner",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"anyone",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "pagesPerMiniute",
+					"type": "Double",
+					"min": "1",
+					"max":"1",
+					"default":"1.0",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				}
+			],
+			"references":[],
+			"onlyCodes": false
+		},
+		{
+			"name": "Monitor",
+			"abstract":"false",
+			"attributes":[
+				{
+					"name": "model",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"1",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "serialNumber",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"1",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":true
+				},
+				{
+					"name": "owner",
+					"type": "String",
+					"min": "1",
+					"max":"1",
+					"default":"anyone",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				},
+				{
+					"name": "inches",
+					"type": "Double",
+					"min": "1",
+					"max":"1",
+					"default":"1.0",
+					"readOnly":false,
+					"isParam":false,
+					"isKey":false
+				}
+			],
+			"references":[],
+			"onlyCodes": false
+		}
+	],
+	"bluetooth":false,
+	"external":true,
+	"onlyCodes":true
+}

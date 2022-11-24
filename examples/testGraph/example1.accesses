@@ -1,0 +1,390 @@
+{
+	"ExternalAccess":[
+		{
+			"name":"inventory",
+			"path":"getPc",
+			"ontological":"inventory",
+			"classname":"PC",
+			"method":"GET",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"query",
+					"value":""
+				}
+			],
+			"output":[
+				{
+					"attr":"serialNumber",
+					"APIOutput":"serialNumber"
+				},
+				{
+					"attr":"MAC",
+					"APIOutput":"MAC"
+				},
+				{
+					"attr":"model",
+					"APIOutput":"model"
+				},
+				{
+					"attr":"IP",
+					"APIOutput":"IP"
+				},
+				{
+					"attr":"owner",
+					"APIOutput":"owner"
+				},
+				{
+					"attr":"os",
+					"APIOutput":"os"
+				},
+				{
+					"attr":"monitors",
+					"APIOutput":"monitors"
+				},
+				{
+					"attr":"printers",
+					"APIOutput":"printers"
+				}
+			],
+			"body":[],
+			"trigger":{
+				"onCreate": true,
+				"onChange": false,
+				"onMove": false,
+				"onDelete": false,
+				"onAccess": false,
+				"onLoad": true,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"pushPc",
+			"ontological":"inventory",
+			"classname":"PC",
+			"method":"PUSH",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"body",
+					"value":""
+				}
+			],
+			"output":[],
+			"body":[
+				{
+					"attr":"serialNumber",
+					"APIBody":"serialNumber"
+				},
+				{
+					"attr":"MAC",
+					"APIBody":"MAC"
+				},
+				{
+					"attr":"model",
+					"APIBody":"model"
+				},
+				{
+					"attr":"IP",
+					"APIBody":"IP"
+				},
+				{
+					"attr":"owner",
+					"APIBody":"owner"
+				},
+				{
+					"attr":"os",
+					"APIBody":"os"
+				},
+				{
+					"attr":"monitors",
+					"APIBody":"monitors"
+				},
+				{
+					"attr":"printers",
+					"APIBody":"printers"
+				}
+			],
+			"trigger":{
+				"onCreate": false,
+				"onChange": true,
+				"onMove": false,
+				"onDelete": false,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"deletePc",
+			"ontological":"inventory",
+			"classname":"PC",
+			"method":"DELETE",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"query",
+					"value":""
+				}
+			],
+			"output":[],
+			"body":[],
+			"trigger":{
+				"onCreate": false,
+				"onChange": false,
+				"onMove": false,
+				"onDelete": true,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"getPrinter",
+			"ontological":"inventory",
+			"classname":"Printer",
+			"method":"GET",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"query",
+					"value":""
+				}
+			],
+			"output":[
+				{
+					"attr":"serialNumber",
+					"APIOutput":"serialNumber"
+				},
+				{
+					"attr":"model",
+					"APIOutput":"model"
+				},
+				{
+					"attr":"IP",
+					"APIOutput":"IP"
+				},
+				{
+					"attr":"owner",
+					"APIOutput":"owner"
+				},
+				{
+					"attr":"pagesPerMinute",
+					"APIOutput":"pagesPerMinute"
+				}
+			],
+			"body":[],
+			"trigger":{
+				"onCreate": true,
+				"onChange": false,
+				"onMove": false,
+				"onDelete": false,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"pushPrinter",
+			"ontological":"inventory",
+			"classname":"Printer",
+			"method":"PUSH",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"body",
+					"value":""
+				}
+			],
+			"output":[],
+			"body":[
+				{
+					"attr":"serialNumber",
+					"APIBody":"serialNumber"
+				},
+				{
+					"attr":"model",
+					"APIBody":"model"
+				},
+				{
+					"attr":"IP",
+					"APIBody":"IP"
+				},
+				{
+					"attr":"owner",
+					"APIBody":"owner"
+				},
+				{
+					"attr":"pagesPerMinute",
+					"APIBody":"pagesPerMinute"
+				}
+			],
+			"trigger":{
+				"onCreate": false,
+				"onChange": true,
+				"onMove": false,
+				"onDelete": false,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"deletePrinter",
+			"ontological":"inventory",
+			"classname":"Printer",
+			"method":"DELETE",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"query",
+					"value":""
+				}
+			],
+			"output":[],
+			"body":[],
+			"trigger":{
+				"onCreate": false,
+				"onChange": false,
+				"onMove": false,
+				"onDelete": true,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"getMonitor",
+			"ontological":"inventory",
+			"classname":"Monitor",
+			"method":"GET",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"query",
+					"value":""
+				}
+			],
+			"output":[
+				{
+					"attr":"serialNumber",
+					"APIOutput":"serialNumber"
+				},
+				{
+					"attr":"model",
+					"APIOutput":"model"
+				},
+				{
+					"attr":"owner",
+					"APIOutput":"owner"
+				},
+				{
+					"attr":"inches",
+					"APIOutput":"inches"
+				}
+			],
+			"body":[],
+			"trigger":{
+				"onCreate": true,
+				"onChange": false,
+				"onMove": false,
+				"onDelete": false,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"pushMonitor",
+			"ontological":"inventory",
+			"classname":"Monitor",
+			"method":"PUSH",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"body",
+					"value":""
+				}
+			],
+			"output":[],
+			"body":[
+				{
+					"attr":"serialNumber",
+					"APIBody":"serialNumber"
+				},
+				{
+					"attr":"model",
+					"APIBody":"model"
+				},
+				{
+					"attr":"owner",
+					"APIBody":"owner"
+				},
+				{
+					"attr":"inches",
+					"APIBody":"inches"
+				}
+			],
+			"trigger":{
+				"onCreate": false,
+				"onChange": true,
+				"onMove": false,
+				"onDelete": false,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		},
+		{
+			"name":"inventory",
+			"path":"deleteMonitor",
+			"ontological":"inventory",
+			"classname":"Monitor",
+			"method":"DELETE",
+			"input":[
+				{
+					"attr":"codeId",
+					"APIInput":"codeId",
+					"way":"query",
+					"value":""
+				}
+			],
+			"output":[],
+			"body":[],
+			"trigger":{
+				"onCreate": false,
+				"onChange": false,
+				"onMove": false,
+				"onDelete": true,
+				"onAccess": false,
+				"onLoad": false,
+				"timeTrigger": 0
+			},
+			"auth":""
+		}
+	]
+	
+}
