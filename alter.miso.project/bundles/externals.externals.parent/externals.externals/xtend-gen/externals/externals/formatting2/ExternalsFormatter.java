@@ -4,13 +4,8 @@
 package externals.externals.formatting2;
 
 import com.google.inject.Inject;
-import externals.ExternalsRoot;
-import externals.ExternalsRootAPIDescriptions;
-import externals.ExternalsRootAPIDescriptionsItems;
-import externals.ExternalsRootPropertiesAbstract;
 import externals.externals.services.ExternalsGrammarAccess;
 import java.util.Arrays;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.formatting2.AbstractFormatter2;
 import org.eclipse.xtext.formatting2.IFormattableDocument;
@@ -22,43 +17,38 @@ public class ExternalsFormatter extends AbstractFormatter2 {
   @Inject
   @Extension
   private ExternalsGrammarAccess _externalsGrammarAccess;
-  
-  protected void _format(final ExternalsRoot externalsRoot, @Extension final IFormattableDocument document) {
-    EList<ExternalsRootPropertiesAbstract> _externalsRoot = externalsRoot.getExternalsRoot();
-    for (final ExternalsRootPropertiesAbstract externalsRootPropertiesAbstract : _externalsRoot) {
-      document.<ExternalsRootPropertiesAbstract>format(externalsRootPropertiesAbstract);
-    }
+
+  protected void _format(final /* ExternalsRoot */Object externalsRoot, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nexternalsRoot cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  protected void _format(final ExternalsRootAPIDescriptions externalsRootAPIDescriptions, @Extension final IFormattableDocument document) {
-    EList<ExternalsRootAPIDescriptionsItems> _aPIDescriptions = externalsRootAPIDescriptions.getAPIDescriptions();
-    for (final ExternalsRootAPIDescriptionsItems externalsRootAPIDescriptionsItems : _aPIDescriptions) {
-      document.<ExternalsRootAPIDescriptionsItems>format(externalsRootAPIDescriptionsItems);
-    }
+
+  protected void _format(final /* ExternalsRootAPIDescriptions */Object externalsRootAPIDescriptions, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nAPIDescriptions cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  public void format(final Object externalsRootAPIDescriptions, final IFormattableDocument document) {
-    if (externalsRootAPIDescriptions instanceof XtextResource) {
-      _format((XtextResource)externalsRootAPIDescriptions, document);
+
+  public void format(final Object externalsRoot, final IFormattableDocument document) {
+    if (externalsRoot instanceof XtextResource) {
+      _format((XtextResource)externalsRoot, document);
       return;
-    } else if (externalsRootAPIDescriptions instanceof ExternalsRootAPIDescriptions) {
-      _format((ExternalsRootAPIDescriptions)externalsRootAPIDescriptions, document);
+    } else if (externalsRoot instanceof EObject) {
+      _format((EObject)externalsRoot, document);
       return;
-    } else if (externalsRootAPIDescriptions instanceof ExternalsRoot) {
-      _format((ExternalsRoot)externalsRootAPIDescriptions, document);
-      return;
-    } else if (externalsRootAPIDescriptions instanceof EObject) {
-      _format((EObject)externalsRootAPIDescriptions, document);
-      return;
-    } else if (externalsRootAPIDescriptions == null) {
+    } else if (externalsRoot == null) {
       _format((Void)null, document);
       return;
-    } else if (externalsRootAPIDescriptions != null) {
-      _format(externalsRootAPIDescriptions, document);
+    } else if (externalsRoot != null) {
+      _format(externalsRoot, document);
+      return;
+    } else if (externalsRoot != null) {
+      _format(externalsRoot, document);
       return;
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(externalsRootAPIDescriptions, document).toString());
+        Arrays.<Object>asList(externalsRoot, document).toString());
     }
   }
 }

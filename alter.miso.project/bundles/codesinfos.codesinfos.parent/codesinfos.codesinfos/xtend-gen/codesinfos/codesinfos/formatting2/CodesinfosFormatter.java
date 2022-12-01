@@ -3,14 +3,9 @@
  */
 package codesinfos.codesinfos.formatting2;
 
-import codesinfos.CodesinfosRoot;
-import codesinfos.CodesinfosRootCodes;
-import codesinfos.CodesinfosRootCodesItems;
-import codesinfos.CodesinfosRootPropertiesAbstract;
 import codesinfos.codesinfos.services.CodesinfosGrammarAccess;
 import com.google.inject.Inject;
 import java.util.Arrays;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.formatting2.AbstractFormatter2;
 import org.eclipse.xtext.formatting2.IFormattableDocument;
@@ -22,43 +17,38 @@ public class CodesinfosFormatter extends AbstractFormatter2 {
   @Inject
   @Extension
   private CodesinfosGrammarAccess _codesinfosGrammarAccess;
-  
-  protected void _format(final CodesinfosRoot codesinfosRoot, @Extension final IFormattableDocument document) {
-    EList<CodesinfosRootPropertiesAbstract> _codesinfosRoot = codesinfosRoot.getCodesinfosRoot();
-    for (final CodesinfosRootPropertiesAbstract codesinfosRootPropertiesAbstract : _codesinfosRoot) {
-      document.<CodesinfosRootPropertiesAbstract>format(codesinfosRootPropertiesAbstract);
-    }
+
+  protected void _format(final /* CodesinfosRoot */Object codesinfosRoot, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ncodesinfosRoot cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  protected void _format(final CodesinfosRootCodes codesinfosRootCodes, @Extension final IFormattableDocument document) {
-    EList<CodesinfosRootCodesItems> _codes = codesinfosRootCodes.getCodes();
-    for (final CodesinfosRootCodesItems codesinfosRootCodesItems : _codes) {
-      document.<CodesinfosRootCodesItems>format(codesinfosRootCodesItems);
-    }
+
+  protected void _format(final /* CodesinfosRootCodes */Object codesinfosRootCodes, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ncodes cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  public void format(final Object codesinfosRootCodes, final IFormattableDocument document) {
-    if (codesinfosRootCodes instanceof XtextResource) {
-      _format((XtextResource)codesinfosRootCodes, document);
+
+  public void format(final Object codesinfosRoot, final IFormattableDocument document) {
+    if (codesinfosRoot instanceof XtextResource) {
+      _format((XtextResource)codesinfosRoot, document);
       return;
-    } else if (codesinfosRootCodes instanceof CodesinfosRootCodes) {
-      _format((CodesinfosRootCodes)codesinfosRootCodes, document);
+    } else if (codesinfosRoot instanceof EObject) {
+      _format((EObject)codesinfosRoot, document);
       return;
-    } else if (codesinfosRootCodes instanceof CodesinfosRoot) {
-      _format((CodesinfosRoot)codesinfosRootCodes, document);
-      return;
-    } else if (codesinfosRootCodes instanceof EObject) {
-      _format((EObject)codesinfosRootCodes, document);
-      return;
-    } else if (codesinfosRootCodes == null) {
+    } else if (codesinfosRoot == null) {
       _format((Void)null, document);
       return;
-    } else if (codesinfosRootCodes != null) {
-      _format(codesinfosRootCodes, document);
+    } else if (codesinfosRoot != null) {
+      _format(codesinfosRoot, document);
+      return;
+    } else if (codesinfosRoot != null) {
+      _format(codesinfosRoot, document);
       return;
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(codesinfosRootCodes, document).toString());
+        Arrays.<Object>asList(codesinfosRoot, document).toString());
     }
   }
 }

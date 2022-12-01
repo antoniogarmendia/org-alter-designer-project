@@ -3,14 +3,9 @@
  */
 package accesses.accesses.formatting2;
 
-import accesses.AccessesRoot;
-import accesses.AccessesRootExternalAccess;
-import accesses.AccessesRootExternalAccessItems;
-import accesses.AccessesRootPropertiesAbstract;
 import accesses.accesses.services.AccessesGrammarAccess;
 import com.google.inject.Inject;
 import java.util.Arrays;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.formatting2.AbstractFormatter2;
 import org.eclipse.xtext.formatting2.IFormattableDocument;
@@ -22,43 +17,38 @@ public class AccessesFormatter extends AbstractFormatter2 {
   @Inject
   @Extension
   private AccessesGrammarAccess _accessesGrammarAccess;
-  
-  protected void _format(final AccessesRoot accessesRoot, @Extension final IFormattableDocument document) {
-    EList<AccessesRootPropertiesAbstract> _accessesRoot = accessesRoot.getAccessesRoot();
-    for (final AccessesRootPropertiesAbstract accessesRootPropertiesAbstract : _accessesRoot) {
-      document.<AccessesRootPropertiesAbstract>format(accessesRootPropertiesAbstract);
-    }
+
+  protected void _format(final /* AccessesRoot */Object accessesRoot, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\naccessesRoot cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  protected void _format(final AccessesRootExternalAccess accessesRootExternalAccess, @Extension final IFormattableDocument document) {
-    EList<AccessesRootExternalAccessItems> _externalAccess = accessesRootExternalAccess.getExternalAccess();
-    for (final AccessesRootExternalAccessItems accessesRootExternalAccessItems : _externalAccess) {
-      document.<AccessesRootExternalAccessItems>format(accessesRootExternalAccessItems);
-    }
+
+  protected void _format(final /* AccessesRootExternalAccess */Object accessesRootExternalAccess, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nexternalAccess cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  public void format(final Object accessesRootExternalAccess, final IFormattableDocument document) {
-    if (accessesRootExternalAccess instanceof XtextResource) {
-      _format((XtextResource)accessesRootExternalAccess, document);
+
+  public void format(final Object accessesRoot, final IFormattableDocument document) {
+    if (accessesRoot instanceof XtextResource) {
+      _format((XtextResource)accessesRoot, document);
       return;
-    } else if (accessesRootExternalAccess instanceof AccessesRootExternalAccess) {
-      _format((AccessesRootExternalAccess)accessesRootExternalAccess, document);
+    } else if (accessesRoot instanceof EObject) {
+      _format((EObject)accessesRoot, document);
       return;
-    } else if (accessesRootExternalAccess instanceof AccessesRoot) {
-      _format((AccessesRoot)accessesRootExternalAccess, document);
-      return;
-    } else if (accessesRootExternalAccess instanceof EObject) {
-      _format((EObject)accessesRootExternalAccess, document);
-      return;
-    } else if (accessesRootExternalAccess == null) {
+    } else if (accessesRoot == null) {
       _format((Void)null, document);
       return;
-    } else if (accessesRootExternalAccess != null) {
-      _format(accessesRootExternalAccess, document);
+    } else if (accessesRoot != null) {
+      _format(accessesRoot, document);
+      return;
+    } else if (accessesRoot != null) {
+      _format(accessesRoot, document);
       return;
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(accessesRootExternalAccess, document).toString());
+        Arrays.<Object>asList(accessesRoot, document).toString());
     }
   }
 }

@@ -4,13 +4,8 @@
 package graphic.graphic.formatting2;
 
 import com.google.inject.Inject;
-import graphic.GraphicRoot;
-import graphic.GraphicRootClasses;
-import graphic.GraphicRootClassesItems;
-import graphic.GraphicRootPropertiesAbstract;
 import graphic.graphic.services.GraphicGrammarAccess;
 import java.util.Arrays;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.formatting2.AbstractFormatter2;
 import org.eclipse.xtext.formatting2.IFormattableDocument;
@@ -22,43 +17,38 @@ public class GraphicFormatter extends AbstractFormatter2 {
   @Inject
   @Extension
   private GraphicGrammarAccess _graphicGrammarAccess;
-  
-  protected void _format(final GraphicRoot graphicRoot, @Extension final IFormattableDocument document) {
-    EList<GraphicRootPropertiesAbstract> _graphicRoot = graphicRoot.getGraphicRoot();
-    for (final GraphicRootPropertiesAbstract graphicRootPropertiesAbstract : _graphicRoot) {
-      document.<GraphicRootPropertiesAbstract>format(graphicRootPropertiesAbstract);
-    }
+
+  protected void _format(final /* GraphicRoot */Object graphicRoot, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ngraphicRoot cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  protected void _format(final GraphicRootClasses graphicRootClasses, @Extension final IFormattableDocument document) {
-    EList<GraphicRootClassesItems> _classes = graphicRootClasses.getClasses();
-    for (final GraphicRootClassesItems graphicRootClassesItems : _classes) {
-      document.<GraphicRootClassesItems>format(graphicRootClassesItems);
-    }
+
+  protected void _format(final /* GraphicRootClasses */Object graphicRootClasses, @Extension final IFormattableDocument document) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nclasses cannot be resolved"
+      + "\nformat cannot be resolved");
   }
-  
-  public void format(final Object graphicRootClasses, final IFormattableDocument document) {
-    if (graphicRootClasses instanceof XtextResource) {
-      _format((XtextResource)graphicRootClasses, document);
+
+  public void format(final Object graphicRoot, final IFormattableDocument document) {
+    if (graphicRoot instanceof XtextResource) {
+      _format((XtextResource)graphicRoot, document);
       return;
-    } else if (graphicRootClasses instanceof GraphicRootClasses) {
-      _format((GraphicRootClasses)graphicRootClasses, document);
+    } else if (graphicRoot instanceof EObject) {
+      _format((EObject)graphicRoot, document);
       return;
-    } else if (graphicRootClasses instanceof GraphicRoot) {
-      _format((GraphicRoot)graphicRootClasses, document);
-      return;
-    } else if (graphicRootClasses instanceof EObject) {
-      _format((EObject)graphicRootClasses, document);
-      return;
-    } else if (graphicRootClasses == null) {
+    } else if (graphicRoot == null) {
       _format((Void)null, document);
       return;
-    } else if (graphicRootClasses != null) {
-      _format(graphicRootClasses, document);
+    } else if (graphicRoot != null) {
+      _format(graphicRoot, document);
+      return;
+    } else if (graphicRoot != null) {
+      _format(graphicRoot, document);
       return;
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(graphicRootClasses, document).toString());
+        Arrays.<Object>asList(graphicRoot, document).toString());
     }
   }
 }
